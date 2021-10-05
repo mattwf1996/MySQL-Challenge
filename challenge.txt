@@ -1,7 +1,7 @@
 
 SAKILA CHALLENGES 
 
-1. 
+1. List all actors
 
 
 mysql> SELECT * FROM actor;
@@ -213,7 +213,7 @@ mysql> SELECT * FROM actor;
 
 
 
-2. 
+2. Find the surname of the actor with the forename 'John'.
 
 
 SELECT last_name FROM actor WHERE first_name="John";
@@ -225,7 +225,7 @@ SELECT last_name FROM actor WHERE first_name="John";
 1 row in set (0.00 sec)
 
 
-3. 
+3. Find all actors with surname 'Neeson'.
 
 
 SELECT * FROM actor WHERE last_name="Neeson";
@@ -239,7 +239,7 @@ SELECT * FROM actor WHERE last_name="Neeson";
 
 
 
-4. 
+4. Find all actors with ID numbers divisible by 10.
 
 
 SELECT * FROM actor WHERE (actor_id % 10) = 0;
@@ -270,7 +270,7 @@ SELECT * FROM actor WHERE (actor_id % 10) = 0;
 20 rows in set (0.00 sec)
 
 
-5. 
+5. What is the description of the movie with an ID of 100?
 
 
 SELECT description FROM film WHERE film_id=100;
@@ -282,7 +282,7 @@ SELECT description FROM film WHERE film_id=100;
 1 row in set (0.00 sec)
 
 
-6. 
+6. Find every R-rated movie.
 
 
 SELECT title, rating FROM film WHERE rating="R";
@@ -488,7 +488,7 @@ SELECT title, rating FROM film WHERE rating="R";
 195 rows in set (0.00 sec)
 
 
-7. 
+7. Find every non-R-rated movie.
 
 
 SELECT title, rating FROM film WHERE rating!="R";
@@ -1305,7 +1305,7 @@ SELECT title, rating FROM film WHERE rating!="R";
 
 
 
-8. 
+8. Find the ten shortest movies.
 
 
 SELECT title, length FROM film ORDER BY length ASC LIMIT 10;
@@ -1326,7 +1326,7 @@ SELECT title, length FROM film ORDER BY length ASC LIMIT 10;
 10 rows in set (0.00 sec)
 
 
-9. 
+9. Find the movies with the longest runtime, without using LIMIT .
 
 SELECT title, length FROM film ORDER BY length DESC;
 +-----------------------------+--------+
@@ -2336,7 +2336,7 @@ SELECT title, length FROM film ORDER BY length DESC;
 1000 rows in set (0.00 sec)
 
 
-10. 
+10. Find all movies that have deleted scenes.
 
 
 SELECT title, special_features FROM film WHERE special_features="Deleted Scenes";
@@ -2408,15 +2408,15 @@ SELECT title, special_features FROM film WHERE special_features="Deleted Scenes"
 61 rows in set (0.00 sec)
 
 
-11. 
+11. Using HAVING , reverse-alphabetically list the last names that are not repeated. 
 
 
 
-12.
+12. Using HAVING , list the last names that appear more than once, from highest to lowest frequency
 
 
 
-13. 
+13. Which actor has appeared in the most films?
 
 
 SELECT first_name, last_name
@@ -2431,12 +2431,12 @@ SELECT first_name, last_name
 1 row in set (0.01 sec)
 
 
-14. 
+14. 'Academy Dinosaur' has been rented out, when is it due to be returned?
 
 
 
 
-15. 
+15. What is the average runtime of all films?
 
 
 SELECT AVG(length) from film;
@@ -2450,14 +2450,14 @@ SELECT AVG(length) from film;
 
 
 
-16. 
+16. List the average runtime for every film category.
 
 
-17.
+17. List all movies featuring a robot.
 
 
 
-18.
+18. How many movies were released in 2010?
 
 
 SELECT release_year, COUNT(title) FROM film GROUP BY release_year ORDER BY COUNT(release_year);
@@ -2473,7 +2473,7 @@ answer = 0
 
 
 
-19. 
+19. Find the titles of all the horror movies.
 
 
 SELECT title FROM film_list WHERE category="horror";
@@ -2540,7 +2540,7 @@ SELECT title FROM film_list WHERE category="horror";
 56 rows in set, 1 warning (0.02 sec)
 
 
-20. 
+20. List the full name of the staff member with the ID of 2.
 
 
 SELECT * FROM staff WHERE (staff_id)=2;
@@ -2553,7 +2553,7 @@ SELECT * FROM staff WHERE (staff_id)=2;
 
 
 
-21. 
+21. List all the movies that Fred Costner has appeared in. 
 
 
 SELECT actor_id, first_name="Fred", last_name="Costner" from actor;
@@ -2562,7 +2562,7 @@ SELECT film_id, title FROM film WHERE film_id IN (select film_id FROM film_actor
 
 
 
-22. 
+22. How many distinct countries are there? 
 
 
 SELECT DISTINCT COUNT(country) AS Countries from Country;
@@ -2575,7 +2575,7 @@ SELECT DISTINCT COUNT(country) AS Countries from Country;
 
 
 
-23. 
+23. List the name of every language in reverse-alphabetical order.
 
 
 SELECT name from language ORDER BY name desc;
@@ -2592,7 +2592,7 @@ SELECT name from language ORDER BY name desc;
 6 rows in set (0.00 sec)
 
 
-24. 
+24. List the full names of every actor whose surname ends with '-son' in alphabetical order by their forename.
 
 
 SELECT first_name, last_name FROM actor WHERE last_name LIKE '%son';
@@ -2613,7 +2613,7 @@ SELECT first_name, last_name FROM actor WHERE last_name LIKE '%son';
 
 
 
-25. 
+25. Which category contains the most films?
 
 
 
