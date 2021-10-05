@@ -1,0 +1,2633 @@
+
+SAKILA CHALLENGES 
+
+1. 
+
+
+mysql> SELECT * FROM actor;
++----------+-------------+--------------+---------------------+
+| actor_id | first_name  | last_name    | last_update         |
++----------+-------------+--------------+---------------------+
+|        1 | PENELOPE    | GUINESS      | 2006-02-15 04:34:33 |
+|        2 | NICK        | WAHLBERG     | 2006-02-15 04:34:33 |
+|        3 | ED          | CHASE        | 2006-02-15 04:34:33 |
+|        4 | JENNIFER    | DAVIS        | 2006-02-15 04:34:33 |
+|        5 | JOHNNY      | LOLLOBRIGIDA | 2006-02-15 04:34:33 |
+|        6 | BETTE       | NICHOLSON    | 2006-02-15 04:34:33 |
+|        7 | GRACE       | MOSTEL       | 2006-02-15 04:34:33 |
+|        8 | MATTHEW     | JOHANSSON    | 2006-02-15 04:34:33 |
+|        9 | JOE         | SWANK        | 2006-02-15 04:34:33 |
+|       10 | CHRISTIAN   | GABLE        | 2006-02-15 04:34:33 |
+|       11 | ZERO        | CAGE         | 2006-02-15 04:34:33 |
+|       12 | KARL        | BERRY        | 2006-02-15 04:34:33 |
+|       13 | UMA         | WOOD         | 2006-02-15 04:34:33 |
+|       14 | VIVIEN      | BERGEN       | 2006-02-15 04:34:33 |
+|       15 | CUBA        | OLIVIER      | 2006-02-15 04:34:33 |
+|       16 | FRED        | COSTNER      | 2006-02-15 04:34:33 |
+|       17 | HELEN       | VOIGHT       | 2006-02-15 04:34:33 |
+|       18 | DAN         | TORN         | 2006-02-15 04:34:33 |
+|       19 | BOB         | FAWCETT      | 2006-02-15 04:34:33 |
+|       20 | LUCILLE     | TRACY        | 2006-02-15 04:34:33 |
+|       21 | KIRSTEN     | PALTROW      | 2006-02-15 04:34:33 |
+|       22 | ELVIS       | MARX         | 2006-02-15 04:34:33 |
+|       23 | SANDRA      | KILMER       | 2006-02-15 04:34:33 |
+|       24 | CAMERON     | STREEP       | 2006-02-15 04:34:33 |
+|       25 | KEVIN       | BLOOM        | 2006-02-15 04:34:33 |
+|       26 | RIP         | CRAWFORD     | 2006-02-15 04:34:33 |
+|       27 | JULIA       | MCQUEEN      | 2006-02-15 04:34:33 |
+|       28 | WOODY       | HOFFMAN      | 2006-02-15 04:34:33 |
+|       29 | ALEC        | WAYNE        | 2006-02-15 04:34:33 |
+|       30 | SANDRA      | PECK         | 2006-02-15 04:34:33 |
+|       31 | SISSY       | SOBIESKI     | 2006-02-15 04:34:33 |
+|       32 | TIM         | HACKMAN      | 2006-02-15 04:34:33 |
+|       33 | MILLA       | PECK         | 2006-02-15 04:34:33 |
+|       34 | AUDREY      | OLIVIER      | 2006-02-15 04:34:33 |
+|       35 | JUDY        | DEAN         | 2006-02-15 04:34:33 |
+|       36 | BURT        | DUKAKIS      | 2006-02-15 04:34:33 |
+|       37 | VAL         | BOLGER       | 2006-02-15 04:34:33 |
+|       38 | TOM         | MCKELLEN     | 2006-02-15 04:34:33 |
+|       39 | GOLDIE      | BRODY        | 2006-02-15 04:34:33 |
+|       40 | JOHNNY      | CAGE         | 2006-02-15 04:34:33 |
+|       41 | JODIE       | DEGENERES    | 2006-02-15 04:34:33 |
+|       42 | TOM         | MIRANDA      | 2006-02-15 04:34:33 |
+|       43 | KIRK        | JOVOVICH     | 2006-02-15 04:34:33 |
+|       44 | NICK        | STALLONE     | 2006-02-15 04:34:33 |
+|       45 | REESE       | KILMER       | 2006-02-15 04:34:33 |
+|       46 | PARKER      | GOLDBERG     | 2006-02-15 04:34:33 |
+|       47 | JULIA       | BARRYMORE    | 2006-02-15 04:34:33 |
+|       48 | FRANCES     | DAY-LEWIS    | 2006-02-15 04:34:33 |
+|       49 | ANNE        | CRONYN       | 2006-02-15 04:34:33 |
+|       50 | NATALIE     | HOPKINS      | 2006-02-15 04:34:33 |
+|       51 | GARY        | PHOENIX      | 2006-02-15 04:34:33 |
+|       52 | CARMEN      | HUNT         | 2006-02-15 04:34:33 |
+|       53 | MENA        | TEMPLE       | 2006-02-15 04:34:33 |
+|       54 | PENELOPE    | PINKETT      | 2006-02-15 04:34:33 |
+|       55 | FAY         | KILMER       | 2006-02-15 04:34:33 |
+|       56 | DAN         | HARRIS       | 2006-02-15 04:34:33 |
+|       57 | JUDE        | CRUISE       | 2006-02-15 04:34:33 |
+|       58 | CHRISTIAN   | AKROYD       | 2006-02-15 04:34:33 |
+|       59 | DUSTIN      | TAUTOU       | 2006-02-15 04:34:33 |
+|       60 | HENRY       | BERRY        | 2006-02-15 04:34:33 |
+|       61 | CHRISTIAN   | NEESON       | 2006-02-15 04:34:33 |
+|       62 | JAYNE       | NEESON       | 2006-02-15 04:34:33 |
+|       63 | CAMERON     | WRAY         | 2006-02-15 04:34:33 |
+|       64 | RAY         | JOHANSSON    | 2006-02-15 04:34:33 |
+|       65 | ANGELA      | HUDSON       | 2006-02-15 04:34:33 |
+|       66 | MARY        | TANDY        | 2006-02-15 04:34:33 |
+|       67 | JESSICA     | BAILEY       | 2006-02-15 04:34:33 |
+|       68 | RIP         | WINSLET      | 2006-02-15 04:34:33 |
+|       69 | KENNETH     | PALTROW      | 2006-02-15 04:34:33 |
+|       70 | MICHELLE    | MCCONAUGHEY  | 2006-02-15 04:34:33 |
+|       71 | ADAM        | GRANT        | 2006-02-15 04:34:33 |
+|       72 | SEAN        | WILLIAMS     | 2006-02-15 04:34:33 |
+|       73 | GARY        | PENN         | 2006-02-15 04:34:33 |
+|       74 | MILLA       | KEITEL       | 2006-02-15 04:34:33 |
+|       75 | BURT        | POSEY        | 2006-02-15 04:34:33 |
+|       76 | ANGELINA    | ASTAIRE      | 2006-02-15 04:34:33 |
+|       77 | CARY        | MCCONAUGHEY  | 2006-02-15 04:34:33 |
+|       78 | GROUCHO     | SINATRA      | 2006-02-15 04:34:33 |
+|       79 | MAE         | HOFFMAN      | 2006-02-15 04:34:33 |
+|       80 | RALPH       | CRUZ         | 2006-02-15 04:34:33 |
+|       81 | SCARLETT    | DAMON        | 2006-02-15 04:34:33 |
+|       82 | WOODY       | JOLIE        | 2006-02-15 04:34:33 |
+|       83 | BEN         | WILLIS       | 2006-02-15 04:34:33 |
+|       84 | JAMES       | PITT         | 2006-02-15 04:34:33 |
+|       85 | MINNIE      | ZELLWEGER    | 2006-02-15 04:34:33 |
+|       86 | GREG        | CHAPLIN      | 2006-02-15 04:34:33 |
+|       87 | SPENCER     | PECK         | 2006-02-15 04:34:33 |
+|       88 | KENNETH     | PESCI        | 2006-02-15 04:34:33 |
+|       89 | CHARLIZE    | DENCH        | 2006-02-15 04:34:33 |
+|       90 | SEAN        | GUINESS      | 2006-02-15 04:34:33 |
+|       91 | CHRISTOPHER | BERRY        | 2006-02-15 04:34:33 |
+|       92 | KIRSTEN     | AKROYD       | 2006-02-15 04:34:33 |
+|       93 | ELLEN       | PRESLEY      | 2006-02-15 04:34:33 |
+|       94 | KENNETH     | TORN         | 2006-02-15 04:34:33 |
+|       95 | DARYL       | WAHLBERG     | 2006-02-15 04:34:33 |
+|       96 | GENE        | WILLIS       | 2006-02-15 04:34:33 |
+|       97 | MEG         | HAWKE        | 2006-02-15 04:34:33 |
+|       98 | CHRIS       | BRIDGES      | 2006-02-15 04:34:33 |
+|       99 | JIM         | MOSTEL       | 2006-02-15 04:34:33 |
+|      100 | SPENCER     | DEPP         | 2006-02-15 04:34:33 |
+|      101 | SUSAN       | DAVIS        | 2006-02-15 04:34:33 |
+|      102 | WALTER      | TORN         | 2006-02-15 04:34:33 |
+|      103 | MATTHEW     | LEIGH        | 2006-02-15 04:34:33 |
+|      104 | PENELOPE    | CRONYN       | 2006-02-15 04:34:33 |
+|      105 | SIDNEY      | CROWE        | 2006-02-15 04:34:33 |
+|      106 | GROUCHO     | DUNST        | 2006-02-15 04:34:33 |
+|      107 | GINA        | DEGENERES    | 2006-02-15 04:34:33 |
+|      108 | WARREN      | NOLTE        | 2006-02-15 04:34:33 |
+|      109 | SYLVESTER   | DERN         | 2006-02-15 04:34:33 |
+|      110 | SUSAN       | DAVIS        | 2006-02-15 04:34:33 |
+|      111 | CAMERON     | ZELLWEGER    | 2006-02-15 04:34:33 |
+|      112 | RUSSELL     | BACALL       | 2006-02-15 04:34:33 |
+|      113 | MORGAN      | HOPKINS      | 2006-02-15 04:34:33 |
+|      114 | MORGAN      | MCDORMAND    | 2006-02-15 04:34:33 |
+|      115 | HARRISON    | BALE         | 2006-02-15 04:34:33 |
+|      116 | DAN         | STREEP       | 2006-02-15 04:34:33 |
+|      117 | RENEE       | TRACY        | 2006-02-15 04:34:33 |
+|      118 | CUBA        | ALLEN        | 2006-02-15 04:34:33 |
+|      119 | WARREN      | JACKMAN      | 2006-02-15 04:34:33 |
+|      120 | PENELOPE    | MONROE       | 2006-02-15 04:34:33 |
+|      121 | LIZA        | BERGMAN      | 2006-02-15 04:34:33 |
+|      122 | SALMA       | NOLTE        | 2006-02-15 04:34:33 |
+|      123 | JULIANNE    | DENCH        | 2006-02-15 04:34:33 |
+|      124 | SCARLETT    | BENING       | 2006-02-15 04:34:33 |
+|      125 | ALBERT      | NOLTE        | 2006-02-15 04:34:33 |
+|      126 | FRANCES     | TOMEI        | 2006-02-15 04:34:33 |
+|      127 | KEVIN       | GARLAND      | 2006-02-15 04:34:33 |
+|      128 | CATE        | MCQUEEN      | 2006-02-15 04:34:33 |
+|      129 | DARYL       | CRAWFORD     | 2006-02-15 04:34:33 |
+|      130 | GRETA       | KEITEL       | 2006-02-15 04:34:33 |
+|      131 | JANE        | JACKMAN      | 2006-02-15 04:34:33 |
+|      132 | ADAM        | HOPPER       | 2006-02-15 04:34:33 |
+|      133 | RICHARD     | PENN         | 2006-02-15 04:34:33 |
+|      134 | GENE        | HOPKINS      | 2006-02-15 04:34:33 |
+|      135 | RITA        | REYNOLDS     | 2006-02-15 04:34:33 |
+|      136 | ED          | MANSFIELD    | 2006-02-15 04:34:33 |
+|      137 | MORGAN      | WILLIAMS     | 2006-02-15 04:34:33 |
+|      138 | LUCILLE     | DEE          | 2006-02-15 04:34:33 |
+|      139 | EWAN        | GOODING      | 2006-02-15 04:34:33 |
+|      140 | WHOOPI      | HURT         | 2006-02-15 04:34:33 |
+|      141 | CATE        | HARRIS       | 2006-02-15 04:34:33 |
+|      142 | JADA        | RYDER        | 2006-02-15 04:34:33 |
+|      143 | RIVER       | DEAN         | 2006-02-15 04:34:33 |
+|      144 | ANGELA      | WITHERSPOON  | 2006-02-15 04:34:33 |
+|      145 | KIM         | ALLEN        | 2006-02-15 04:34:33 |
+|      146 | ALBERT      | JOHANSSON    | 2006-02-15 04:34:33 |
+|      147 | FAY         | WINSLET      | 2006-02-15 04:34:33 |
+|      148 | EMILY       | DEE          | 2006-02-15 04:34:33 |
+|      149 | RUSSELL     | TEMPLE       | 2006-02-15 04:34:33 |
+|      150 | JAYNE       | NOLTE        | 2006-02-15 04:34:33 |
+|      151 | GEOFFREY    | HESTON       | 2006-02-15 04:34:33 |
+|      152 | BEN         | HARRIS       | 2006-02-15 04:34:33 |
+|      153 | MINNIE      | KILMER       | 2006-02-15 04:34:33 |
+|      154 | MERYL       | GIBSON       | 2006-02-15 04:34:33 |
+|      155 | IAN         | TANDY        | 2006-02-15 04:34:33 |
+|      156 | FAY         | WOOD         | 2006-02-15 04:34:33 |
+|      157 | GRETA       | MALDEN       | 2006-02-15 04:34:33 |
+|      158 | VIVIEN      | BASINGER     | 2006-02-15 04:34:33 |
+|      159 | LAURA       | BRODY        | 2006-02-15 04:34:33 |
+|      160 | CHRIS       | DEPP         | 2006-02-15 04:34:33 |
+|      161 | HARVEY      | HOPE         | 2006-02-15 04:34:33 |
+|      162 | OPRAH       | KILMER       | 2006-02-15 04:34:33 |
+|      163 | CHRISTOPHER | WEST         | 2006-02-15 04:34:33 |
+|      164 | HUMPHREY    | WILLIS       | 2006-02-15 04:34:33 |
+|      165 | AL          | GARLAND      | 2006-02-15 04:34:33 |
+|      166 | NICK        | DEGENERES    | 2006-02-15 04:34:33 |
+|      167 | LAURENCE    | BULLOCK      | 2006-02-15 04:34:33 |
+|      168 | WILL        | WILSON       | 2006-02-15 04:34:33 |
+|      169 | KENNETH     | HOFFMAN      | 2006-02-15 04:34:33 |
+|      170 | MENA        | HOPPER       | 2006-02-15 04:34:33 |
+|      171 | OLYMPIA     | PFEIFFER     | 2006-02-15 04:34:33 |
+|      172 | GROUCHO     | WILLIAMS     | 2006-02-15 04:34:33 |
+|      173 | ALAN        | DREYFUSS     | 2006-02-15 04:34:33 |
+|      174 | MICHAEL     | BENING       | 2006-02-15 04:34:33 |
+|      175 | WILLIAM     | HACKMAN      | 2006-02-15 04:34:33 |
+|      176 | JON         | CHASE        | 2006-02-15 04:34:33 |
+|      177 | GENE        | MCKELLEN     | 2006-02-15 04:34:33 |
+|      178 | LISA        | MONROE       | 2006-02-15 04:34:33 |
+|      179 | ED          | GUINESS      | 2006-02-15 04:34:33 |
+|      180 | JEFF        | SILVERSTONE  | 2006-02-15 04:34:33 |
+|      181 | MATTHEW     | CARREY       | 2006-02-15 04:34:33 |
+|      182 | DEBBIE      | AKROYD       | 2006-02-15 04:34:33 |
+|      183 | RUSSELL     | CLOSE        | 2006-02-15 04:34:33 |
+|      184 | HUMPHREY    | GARLAND      | 2006-02-15 04:34:33 |
+|      185 | MICHAEL     | BOLGER       | 2006-02-15 04:34:33 |
+|      186 | JULIA       | ZELLWEGER    | 2006-02-15 04:34:33 |
+|      187 | RENEE       | BALL         | 2006-02-15 04:34:33 |
+|      188 | ROCK        | DUKAKIS      | 2006-02-15 04:34:33 |
+|      189 | CUBA        | BIRCH        | 2006-02-15 04:34:33 |
+|      190 | AUDREY      | BAILEY       | 2006-02-15 04:34:33 |
+|      191 | GREGORY     | GOODING      | 2006-02-15 04:34:33 |
+|      192 | JOHN        | SUVARI       | 2006-02-15 04:34:33 |
+|      193 | BURT        | TEMPLE       | 2006-02-15 04:34:33 |
+|      194 | MERYL       | ALLEN        | 2006-02-15 04:34:33 |
+|      195 | JAYNE       | SILVERSTONE  | 2006-02-15 04:34:33 |
+|      196 | BELA        | WALKEN       | 2006-02-15 04:34:33 |
+|      197 | REESE       | WEST         | 2006-02-15 04:34:33 |
+|      198 | MARY        | KEITEL       | 2006-02-15 04:34:33 |
+|      199 | JULIA       | FAWCETT      | 2006-02-15 04:34:33 |
+|      200 | THORA       | TEMPLE       | 2006-02-15 04:34:33 |
++----------+-------------+--------------+---------------------+
+200 rows in set (0.00 sec)
+
+
+
+2. 
+
+
+SELECT last_name FROM actor WHERE first_name="John";
++-----------+
+| last_name |
++-----------+
+| SUVARI    |
++-----------+
+1 row in set (0.00 sec)
+
+
+3. 
+
+
+SELECT * FROM actor WHERE last_name="Neeson";
++----------+------------+-----------+---------------------+
+| actor_id | first_name | last_name | last_update         |
++----------+------------+-----------+---------------------+
+|       61 | CHRISTIAN  | NEESON    | 2006-02-15 04:34:33 |
+|       62 | JAYNE      | NEESON    | 2006-02-15 04:34:33 |
++----------+------------+-----------+---------------------+
+2 rows in set (0.02 sec)
+
+
+
+4. 
+
+
+SELECT * FROM actor WHERE (actor_id % 10) = 0;
++----------+------------+-------------+---------------------+
+| actor_id | first_name | last_name   | last_update         |
++----------+------------+-------------+---------------------+
+|       10 | CHRISTIAN  | GABLE       | 2006-02-15 04:34:33 |
+|       20 | LUCILLE    | TRACY       | 2006-02-15 04:34:33 |
+|       30 | SANDRA     | PECK        | 2006-02-15 04:34:33 |
+|       40 | JOHNNY     | CAGE        | 2006-02-15 04:34:33 |
+|       50 | NATALIE    | HOPKINS     | 2006-02-15 04:34:33 |
+|       60 | HENRY      | BERRY       | 2006-02-15 04:34:33 |
+|       70 | MICHELLE   | MCCONAUGHEY | 2006-02-15 04:34:33 |
+|       80 | RALPH      | CRUZ        | 2006-02-15 04:34:33 |
+|       90 | SEAN       | GUINESS     | 2006-02-15 04:34:33 |
+|      100 | SPENCER    | DEPP        | 2006-02-15 04:34:33 |
+|      110 | SUSAN      | DAVIS       | 2006-02-15 04:34:33 |
+|      120 | PENELOPE   | MONROE      | 2006-02-15 04:34:33 |
+|      130 | GRETA      | KEITEL      | 2006-02-15 04:34:33 |
+|      140 | WHOOPI     | HURT        | 2006-02-15 04:34:33 |
+|      150 | JAYNE      | NOLTE       | 2006-02-15 04:34:33 |
+|      160 | CHRIS      | DEPP        | 2006-02-15 04:34:33 |
+|      170 | MENA       | HOPPER      | 2006-02-15 04:34:33 |
+|      180 | JEFF       | SILVERSTONE | 2006-02-15 04:34:33 |
+|      190 | AUDREY     | BAILEY      | 2006-02-15 04:34:33 |
+|      200 | THORA      | TEMPLE      | 2006-02-15 04:34:33 |
++----------+------------+-------------+---------------------+
+20 rows in set (0.00 sec)
+
+
+5. 
+
+
+SELECT description FROM film WHERE film_id=100;
++-----------------------------------------------------------------------------------------------------------------+
+| description                                                                                                     |
++-----------------------------------------------------------------------------------------------------------------+
+| A Beautiful Drama of a Dentist And a Composer who must Battle a Sumo Wrestler in The First Manned Space Station |
++-----------------------------------------------------------------------------------------------------------------+
+1 row in set (0.00 sec)
+
+
+6. 
+
+
+SELECT title, rating FROM film WHERE rating="R";
++-------------------------+--------+
+| title                   | rating |
++-------------------------+--------+
+| AIRPORT POLLOCK         | R      |
+| ALONE TRIP              | R      |
+| AMELIE HELLFIGHTERS     | R      |
+| AMERICAN CIRCUS         | R      |
+| ANACONDA CONFESSIONS    | R      |
+| ANALYZE HOOSIERS        | R      |
+| ANYTHING SAVANNAH       | R      |
+| APOCALYPSE FLAMINGOS    | R      |
+| ARMY FLINTSTONES        | R      |
+| BADMAN DAWN             | R      |
+| BANGER PINOCCHIO        | R      |
+| BEAR GRACELAND          | R      |
+| BEAST HUNCHBACK         | R      |
+| BEVERLY OUTLAW          | R      |
+| BOOGIE AMELIE           | R      |
+| BOULEVARD MOB           | R      |
+| BROOKLYN DESERT         | R      |
+| BROTHERHOOD BLANKET     | R      |
+| BUBBLE GROSSE           | R      |
+| CAMPUS REMEMBER         | R      |
+| CANDIDATE PERDITION     | R      |
+| CANYON STOCK            | R      |
+| CAUSE DATE              | R      |
+| CHANCE RESURRECTION     | R      |
+| CHARIOTS CONSPIRACY     | R      |
+| CHOCOLATE DUCK          | R      |
+| CLONES PINOCCHIO        | R      |
+| CLOSER BANG             | R      |
+| CLUELESS BUCKET         | R      |
+| COMANCHEROS ENEMY       | R      |
+| COMMANDMENTS EXPRESS    | R      |
+| CONNECTICUT TRAMP       | R      |
+| CONVERSATION DOWNHILL   | R      |
+| CROSSING DIVORCE        | R      |
+| CROWDS TELEMARK         | R      |
+| CRUSADE HONEY           | R      |
+| CUPBOARD SINNERS        | R      |
+| DATE SPEED              | R      |
+| DELIVERANCE MULHOLLAND  | R      |
+| DESERT POSEIDON         | R      |
+| DETAILS PACKER          | R      |
+| DEVIL DESIRE            | R      |
+| DINOSAUR SECRETARY      | R      |
+| DISTURBING SCARFACE     | R      |
+| DIVINE RESURRECTION     | R      |
+| DOOM DANCING            | R      |
+| DOUBLE WRATH            | R      |
+| DOUBTFIRE LABYRINTH     | R      |
+| DROP WATERFRONT         | R      |
+| DURHAM PANKY            | R      |
+| EARRING INSTINCT        | R      |
+| ENTRAPMENT SATISFACTION | R      |
+| ESCAPE METROPOLIS       | R      |
+| EXPRESS LONELY          | R      |
+| FAMILY SWEET            | R      |
+| FEUD FROGMEN            | R      |
+| FEVER EMPIRE            | R      |
+| FIDDLER LOST            | R      |
+| FIGHT JAWBREAKER        | R      |
+| FINDING ANACONDA        | R      |
+| FIRE WOLVES             | R      |
+| FISH OPUS               | R      |
+| FLIGHT LIES             | R      |
+| FORREST SONS            | R      |
+| FREAKY POCUS            | R      |
+| FRIDA SLIPPER           | R      |
+| FROGMEN BREAKING        | R      |
+| FUGITIVE MAGUIRE        | R      |
+| GALAXY SWEETHEARTS      | R      |
+| GHOSTBUSTERS ELF        | R      |
+| GIANT TROOPERS          | R      |
+| GILMORE BOILED          | R      |
+| GO PURPLE               | R      |
+| GOLD RIVER              | R      |
+| GOLDMINE TYCOON         | R      |
+| GONE TROUBLE            | R      |
+| GORGEOUS BINGO          | R      |
+| GRACELAND DYNAMITE      | R      |
+| GREEDY ROOTS            | R      |
+| GRINCH MASSAGE          | R      |
+| GROSSE WONDERFUL        | R      |
+| GUYS FALCON             | R      |
+| HAMLET WISDOM           | R      |
+| HANDICAP BOONDOCK       | R      |
+| HARDLY ROBBERS          | R      |
+| HAUNTING PIANIST        | R      |
+| HEAD STRANGER           | R      |
+| HIGH ENCINO             | R      |
+| HIGHBALL POTTER         | R      |
+| HOLOCAUST HIGHBALL      | R      |
+| HOLY TADPOLE            | R      |
+| HOME PITY               | R      |
+| HOMEWARD CIDER          | R      |
+| HONEY TIES              | R      |
+| HORROR REIGN            | R      |
+| HOUSE DYNAMITE          | R      |
+| ICE CROSSING            | R      |
+| ILLUSION AMELIE         | R      |
+| INTERVIEW LIAISONS      | R      |
+| ISHTAR ROCKETEER        | R      |
+| JEEPERS WEDDING         | R      |
+| JEOPARDY ENCINO         | R      |
+| JET NEIGHBORS           | R      |
+| KANE EXORCIST           | R      |
+| KILLER INNOCENT         | R      |
+| KISSING DOLLS           | R      |
+| KRAMER CHOCOLATE        | R      |
+| LIGHTS DEER             | R      |
+| LOATHING LEGALLY        | R      |
+| LOCK REAR               | R      |
+| LOSE INCH               | R      |
+| LOVE SUICIDES           | R      |
+| MADIGAN DORADO          | R      |
+| MADISON TRAP            | R      |
+| MAGNIFICENT CHITTY      | R      |
+| MASSACRE USUAL          | R      |
+| MAUDE MOD               | R      |
+| MOTHER OLEANDER         | R      |
+| MUSIC BOONDOCK          | R      |
+| NEIGHBORS CHARADE       | R      |
+| OPUS ICE                | R      |
+| ORIENT CLOSER           | R      |
+| OZ LIAISONS             | R      |
+| PAJAMA JAWBREAKER       | R      |
+| PLUTO OLEANDER          | R      |
+| PRIX UNDEFEATED         | R      |
+| PURPLE MOVIE            | R      |
+| QUEST MUSSOLINI         | R      |
+| QUILLS BULL             | R      |
+| RAGE GAMES              | R      |
+| RAGING AIRPLANE         | R      |
+| REMEMBER DIARY          | R      |
+| REQUIEM TYCOON          | R      |
+| REUNION WITCHES         | R      |
+| ROAD ROXANNE            | R      |
+| ROBBERY BRIGHT          | R      |
+| ROOF CHAMPION           | R      |
+| ROXANNE REBEL           | R      |
+| RULES HUMAN             | R      |
+| RUN PACIFIC             | R      |
+| SALUTE APOLLO           | R      |
+| SATURN NAME             | R      |
+| SENSE GREEK             | R      |
+| SEVEN SWARM             | R      |
+| SHEPHERD MIDSUMMER      | R      |
+| SHIP WONDERLAND         | R      |
+| SHRUNK DIVINE           | R      |
+| SIEGE MADRE             | R      |
+| SILENCE KANE            | R      |
+| SLACKER LIAISONS        | R      |
+| SLING LUKE              | R      |
+| SMOOCHY CONTROL         | R      |
+| SOLDIERS EVOLUTION      | R      |
+| SOUP WISDOM             | R      |
+| SOUTH WAIT              | R      |
+| SPIRIT FLINTSTONES      | R      |
+| SPLENDOR PATTON         | R      |
+| STAGECOACH ARMAGEDDON   | R      |
+| STAMPEDE DISTURBING     | R      |
+| STORY SIDE              | R      |
+| STRAIGHT HOURS          | R      |
+| STRANGERS GRAFFITI      | R      |
+| STREETCAR INTENTIONS    | R      |
+| SUBMARINE BED           | R      |
+| SUIT WALLS              | R      |
+| SUN CONFESSIONS         | R      |
+| SWEET BROTHERHOOD       | R      |
+| TERMINATOR CLUB         | R      |
+| TIES HUNGER             | R      |
+| TIGHTS DAWN             | R      |
+| TITANIC BOONDOCK        | R      |
+| TOMORROW HUSTLER        | R      |
+| TOWN ARK                | R      |
+| TRAIN BUNCH             | R      |
+| TROOPERS METAL          | R      |
+| TUXEDO MILE             | R      |
+| UNFAITHFUL KILL         | R      |
+| UNITED PILOT            | R      |
+| VACATION BOONDOCK       | R      |
+| VANISHED GARDEN         | R      |
+| VELVET TERMINATOR       | R      |
+| VERTIGO NORTHWEST       | R      |
+| VIRGINIAN PLUTO         | R      |
+| WASH HEAVENLY           | R      |
+| WEEKEND PERSONAL        | R      |
+| WILD APOLLO             | R      |
+| WILLOW TRACY            | R      |
+| WIND PHANTOM            | R      |
+| WINDOW SIDE             | R      |
+| WISDOM WORKER           | R      |
+| WOMEN DORADO            | R      |
+| WORKER TARZAN           | R      |
+| WORKING MICROCOSMOS     | R      |
+| YENTL IDAHO             | R      |
+| ZOOLANDER FICTION       | R      |
++-------------------------+--------+
+195 rows in set (0.00 sec)
+
+
+7. 
+
+
+SELECT title, rating FROM film WHERE rating!="R";
++-----------------------------+--------+
+| title                       | rating |
++-----------------------------+--------+
+| ACADEMY DINOSAUR            | PG     |
+| ACE GOLDFINGER              | G      |
+| ADAPTATION HOLES            | NC-17  |
+| AFFAIR PREJUDICE            | G      |
+| AFRICAN EGG                 | G      |
+| AGENT TRUMAN                | PG     |
+| AIRPLANE SIERRA             | PG-13  |
+| ALABAMA DEVIL               | PG-13  |
+| ALADDIN CALENDAR            | NC-17  |
+| ALAMO VIDEOTAPE             | G      |
+| ALASKA PHANTOM              | PG     |
+| ALI FOREVER                 | PG     |
+| ALICE FANTASIA              | NC-17  |
+| ALIEN CENTER                | NC-17  |
+| ALLEY EVOLUTION             | NC-17  |
+| ALTER VICTORY               | PG-13  |
+| AMADEUS HOLY                | PG     |
+| AMISTAD MIDSUMMER           | G      |
+| ANGELS LIFE                 | G      |
+| ANNIE IDENTITY              | G      |
+| ANONYMOUS HUMAN             | NC-17  |
+| ANTHEM LUKE                 | PG-13  |
+| ANTITRUST TOMATOES          | NC-17  |
+| APACHE DIVINE               | NC-17  |
+| APOLLO TEEN                 | PG-13  |
+| ARABIA DOGMA                | NC-17  |
+| ARACHNOPHOBIA ROLLERCOASTER | PG-13  |
+| ARGONAUTS TOWN              | PG-13  |
+| ARIZONA BANG                | PG     |
+| ARK RIDGEMONT               | NC-17  |
+| ARMAGEDDON LOST             | G      |
+| ARSENIC INDEPENDENCE        | PG     |
+| ARTIST COLDBLOODED          | NC-17  |
+| ATLANTIS CAUSE              | G      |
+| ATTACKS HATE                | PG-13  |
+| ATTRACTION NEWTON           | PG-13  |
+| AUTUMN CROW                 | G      |
+| BABY HALL                   | NC-17  |
+| BACKLASH UNDEFEATED         | PG-13  |
+| BAKED CLEOPATRA             | G      |
+| BALLOON HOMEWARD            | NC-17  |
+| BALLROOM MOCKINGBIRD        | G      |
+| BANG KWAI                   | NC-17  |
+| BARBARELLA STREETCAR        | G      |
+| BAREFOOT MANCHURIAN         | G      |
+| BASIC EASY                  | PG-13  |
+| BEACH HEARTBREAKERS         | G      |
+| BEAUTY GREASE               | G      |
+| BED HIGHBALL                | NC-17  |
+| BEDAZZLED MARRIED           | PG     |
+| BEETHOVEN EXORCIST          | PG-13  |
+| BEHAVIOR RUNAWAY            | PG     |
+| BENEATH RUSH                | NC-17  |
+| BERETS AGENT                | PG-13  |
+| BETRAYED REAR               | NC-17  |
+| BIKINI BORROWERS            | NC-17  |
+| BILKO ANONYMOUS             | PG-13  |
+| BILL OTHERS                 | PG     |
+| BINGO TALENTED              | PG-13  |
+| BIRCH ANTITRUST             | PG     |
+| BIRD INDEPENDENCE           | G      |
+| BIRDCAGE CASPER             | NC-17  |
+| BIRDS PERDITION             | G      |
+| BLACKOUT PRIVATE            | PG     |
+| BLADE POLISH                | PG-13  |
+| BLANKET BEVERLY             | G      |
+| BLINDNESS GUN               | PG-13  |
+| BLOOD ARGONAUTS             | G      |
+| BLUES INSTINCT              | G      |
+| BOILED DARES                | PG     |
+| BONNIE HOLOCAUST            | G      |
+| BOONDOCK BALLROOM           | NC-17  |
+| BORN SPINAL                 | PG     |
+| BORROWERS BEDAZZLED         | G      |
+| BOUND CHEAPER               | PG     |
+| BOWFINGER GABLES            | NC-17  |
+| BRANNIGAN SUNRISE           | PG     |
+| BRAVEHEART HUMAN            | PG-13  |
+| BREAKFAST GOLDFINGER        | G      |
+| BREAKING HOME               | PG-13  |
+| BRIDE INTRIGUE              | G      |
+| BRIGHT ENCOUNTERS           | PG-13  |
+| BRINGING HYSTERICAL         | PG     |
+| BUCKET BROTHERHOOD          | PG     |
+| BUGSY SONG                  | G      |
+| BULL SHAWSHANK              | NC-17  |
+| BULWORTH COMMANDMENTS       | G      |
+| BUNCH MINDS                 | G      |
+| BUTCH PANTHER               | PG-13  |
+| BUTTERFLY CHOCOLAT          | G      |
+| CABIN FLASH                 | NC-17  |
+| CADDYSHACK JEDI             | NC-17  |
+| CALENDAR GUNFIGHT           | NC-17  |
+| CALIFORNIA BIRDS            | NC-17  |
+| CAMELOT VACATION            | NC-17  |
+| CANDLES GRAPES              | NC-17  |
+| CAPER MOTIONS               | G      |
+| CARIBBEAN LIBERTY           | NC-17  |
+| CAROL TEXAS                 | PG     |
+| CARRIE BUNCH                | PG     |
+| CASABLANCA SUPER            | G      |
+| CASPER DRAGONFLY            | PG-13  |
+| CASSIDY WYOMING             | NC-17  |
+| CASUALTIES ENCINO           | G      |
+| CAT CONEHEADS               | G      |
+| CATCH AMISTAD               | G      |
+| CELEBRITY HORN              | PG-13  |
+| CENTER DINOSAUR             | PG     |
+| CHAINSAW UPTOWN             | PG     |
+| CHAMBER ITALIAN             | NC-17  |
+| CHAMPION FLATLINERS         | PG     |
+| CHAPLIN LICENSE             | NC-17  |
+| CHARADE DUFFEL              | PG     |
+| CHASING FIGHT               | PG     |
+| CHEAPER CLYDE               | G      |
+| CHICAGO NORTH               | PG-13  |
+| CHICKEN HELLFIGHTERS        | PG     |
+| CHILL LUCK                  | PG     |
+| CHINATOWN GLADIATOR         | PG     |
+| CHISUM BEHAVIOR             | G      |
+| CHITTY LOCK                 | G      |
+| CHOCOLAT HARRY              | NC-17  |
+| CHRISTMAS MOONSHINE         | NC-17  |
+| CIDER DESIRE                | PG     |
+| CINCINATTI WHISPERER        | NC-17  |
+| CIRCUS YOUTH                | PG-13  |
+| CITIZEN SHREK               | G      |
+| CLASH FREDDY                | G      |
+| CLEOPATRA DEVIL             | PG-13  |
+| CLERKS ANGELS               | G      |
+| CLOCKWORK PARADISE          | PG-13  |
+| CLUB GRAFFITI               | PG-13  |
+| CLUE GRAIL                  | NC-17  |
+| CLYDE THEORY                | PG-13  |
+| COAST RAINBOW               | PG     |
+| COLDBLOODED DARLING         | G      |
+| COLOR PHILADELPHIA          | G      |
+| COMA HEAD                   | NC-17  |
+| COMFORTS RUSH               | NC-17  |
+| COMMAND DARLING             | PG-13  |
+| CONEHEADS SMOOCHY           | NC-17  |
+| CONFESSIONS MAGUIRE         | PG-13  |
+| CONFIDENTIAL INTERVIEW      | NC-17  |
+| CONFUSED CANDLES            | PG-13  |
+| CONGENIALITY QUEST          | PG-13  |
+| CONNECTION MICROCOSMOS      | G      |
+| CONQUERER NUTS              | G      |
+| CONSPIRACY SPIRIT           | PG-13  |
+| CONTACT ANONYMOUS           | PG-13  |
+| CONTROL ANTHEM              | G      |
+| CORE SUIT                   | PG-13  |
+| COWBOY DOOM                 | PG     |
+| CRAFT OUTFIELD              | NC-17  |
+| CRANES RESERVOIR            | NC-17  |
+| CRAZY HOME                  | PG     |
+| CREATURES SHAKESPEARE       | NC-17  |
+| CREEPERS KANE               | NC-17  |
+| CROOKED FROGMEN             | PG-13  |
+| CROSSROADS CASUALTIES       | G      |
+| CROW GREASE                 | PG     |
+| CRUELTY UNFORGIVEN          | G      |
+| CRYSTAL BREAKING            | NC-17  |
+| CURTAIN VIDEOTAPE           | PG-13  |
+| CYCLONE FAMILY              | PG     |
+| DADDY PITTSBURGH            | G      |
+| DAISY MENAGERIE             | G      |
+| DALMATIONS SWEDEN           | PG     |
+| DANCES NONE                 | NC-17  |
+| DANCING FEVER               | G      |
+| DANGEROUS UPTOWN            | PG     |
+| DARES PLUTO                 | PG-13  |
+| DARKNESS WAR                | NC-17  |
+| DARKO DORADO                | NC-17  |
+| DARLING BREAKING            | PG-13  |
+| DARN FORRESTER              | G      |
+| DAUGHTER MADIGAN            | PG-13  |
+| DAWN POND                   | PG     |
+| DAY UNFAITHFUL              | G      |
+| DAZED PUNK                  | G      |
+| DECEIVER BETRAYED           | NC-17  |
+| DEEP CRUSADE                | PG-13  |
+| DEER VIRGINIAN              | NC-17  |
+| DESIRE ALIEN                | NC-17  |
+| DESPERATE TRAINSPOTTING     | G      |
+| DESTINATION JERK            | PG-13  |
+| DESTINY SATURDAY            | G      |
+| DETECTIVE VISION            | PG-13  |
+| DIARY PANIC                 | G      |
+| DIRTY ACE                   | NC-17  |
+| DISCIPLE MOTHER             | PG     |
+| DIVIDE MONSTER              | PG-13  |
+| DIVORCE SHINING             | G      |
+| DOCTOR GRAIL                | G      |
+| DOGMA FAMILY                | G      |
+| DOLLS RAGE                  | PG-13  |
+| DONNIE ALLEY                | NC-17  |
+| DOORS PRESIDENT             | NC-17  |
+| DORADO NOTTING              | NC-17  |
+| DOWNHILL ENOUGH             | G      |
+| DOZEN LION                  | NC-17  |
+| DRACULA CRYSTAL             | G      |
+| DRAGON SQUAD                | NC-17  |
+| DRAGONFLY STRANGERS         | NC-17  |
+| DREAM PICKUP                | PG     |
+| DRIFTER COMMANDMENTS        | PG-13  |
+| DRIVER ANNIE                | PG-13  |
+| DRIVING POLISH              | NC-17  |
+| DRUMLINE CYCLONE            | G      |
+| DRUMS DYNAMITE              | PG     |
+| DUCK RACER                  | NC-17  |
+| DUDE BLINDNESS              | G      |
+| DUFFEL APOCALYPSE           | G      |
+| DUMBO LUST                  | NC-17  |
+| DWARFS ALTER                | G      |
+| DYING MAKER                 | PG     |
+| DYNAMITE TARZAN             | PG-13  |
+| EAGLES PANKY                | NC-17  |
+| EARLY HOME                  | NC-17  |
+| EARTH VISION                | NC-17  |
+| EASY GLADIATOR              | G      |
+| EDGE KISSING                | NC-17  |
+| EFFECT GLADIATOR            | PG     |
+| EGG IGBY                    | PG     |
+| EGYPT TENENBAUMS            | PG     |
+| ELEMENT FREDDY              | NC-17  |
+| ELEPHANT TROJAN             | PG-13  |
+| ELF MURDER                  | NC-17  |
+| ELIZABETH SHANE             | NC-17  |
+| EMPIRE MALKOVICH            | G      |
+| ENCINO ELF                  | G      |
+| ENCOUNTERS CURTAIN          | NC-17  |
+| ENDING CROWDS               | NC-17  |
+| ENEMY ODDS                  | NC-17  |
+| ENGLISH BULWORTH            | PG-13  |
+| ENOUGH RAGING               | NC-17  |
+| EVE RESURRECTION            | G      |
+| EVERYONE CRAFT              | PG     |
+| EVOLUTION ALTER             | PG-13  |
+| EXCITEMENT EVE              | G      |
+| EXORCIST STING              | G      |
+| EXPECATIONS NATURAL         | PG-13  |
+| EXPENDABLE STALLION         | PG     |
+| EXTRAORDINARY CONQUERER     | G      |
+| EYES DRIVING                | PG-13  |
+| FACTORY DRAGON              | PG-13  |
+| FALCON VOLUME               | PG-13  |
+| FANTASIA PARK               | G      |
+| FANTASY TROOPERS            | PG-13  |
+| FARGO GANDHI                | G      |
+| FATAL HAUNTED               | PG     |
+| FEATHERS METAL              | PG-13  |
+| FELLOWSHIP AUTUMN           | NC-17  |
+| FERRIS MOTHER               | PG     |
+| FICTION CHRISTMAS           | PG     |
+| FIDELITY DEVIL              | G      |
+| FIREBALL PHILADELPHIA       | PG     |
+| FIREHOUSE VIETNAM           | G      |
+| FLAMINGOS CONNECTICUT       | PG-13  |
+| FLASH WARS                  | NC-17  |
+| FLATLINERS KILLER           | G      |
+| FLINTSTONES HAPPINESS       | PG-13  |
+| FLOATS GARDEN               | PG-13  |
+| FLYING HOOK                 | NC-17  |
+| FOOL MOCKINGBIRD            | PG     |
+| FOREVER CANDIDATE           | NC-17  |
+| FORRESTER COMANCHEROS       | NC-17  |
+| FORWARD TEMPLE              | NC-17  |
+| FRANKENSTEIN STRANGER       | NC-17  |
+| FREDDY STORM                | NC-17  |
+| FREEDOM CLEOPATRA           | PG-13  |
+| FRENCH HOLIDAY              | PG     |
+| FRISCO FORREST              | PG     |
+| FRONTIER CABIN              | PG-13  |
+| FROST HEAD                  | PG     |
+| FULL FLATLINERS             | PG     |
+| FURY MURDER                 | PG-13  |
+| GABLES METROPOLIS           | PG     |
+| GAMES BOWFINGER             | PG-13  |
+| GANDHI KWAI                 | PG-13  |
+| GANGS PRIDE                 | PG-13  |
+| GARDEN ISLAND               | G      |
+| GASLIGHT CRUSADE            | PG     |
+| GATHERING CALENDAR          | PG-13  |
+| GENTLEMEN STAGE             | NC-17  |
+| GHOST GROUNDHOG             | G      |
+| GILBERT PELICAN             | G      |
+| GLADIATOR WESTWARD          | PG     |
+| GLASS DYING                 | G      |
+| GLEAMING JAWBREAKER         | NC-17  |
+| GLORY TRACY                 | PG-13  |
+| GODFATHER DIARY             | NC-17  |
+| GOLDFINGER SENSIBILITY      | G      |
+| GOODFELLAS SALUTE           | PG     |
+| GOSFORD DONNIE              | G      |
+| GRADUATE LORD               | G      |
+| GRAFFITI LOVE               | PG     |
+| GRAIL FRANKENSTEIN          | NC-17  |
+| GRAPES FURY                 | G      |
+| GREASE YOUTH                | G      |
+| GREATEST NORTH              | NC-17  |
+| GREEK EVERYONE              | PG     |
+| GRIT CLOCKWORK              | PG     |
+| GROOVE FICTION              | NC-17  |
+| GROUNDHOG UNCUT             | PG-13  |
+| GUMP DATE                   | NC-17  |
+| GUN BONNIE                  | G      |
+| GUNFIGHT MOON               | NC-17  |
+| GUNFIGHTER MUSSOLINI        | PG-13  |
+| HALF OUTFIELD               | PG-13  |
+| HALL CASSIDY                | NC-17  |
+| HALLOWEEN NUTS              | PG-13  |
+| HANGING DEEP                | G      |
+| HANKY OCTOBER               | NC-17  |
+| HANOVER GALAXY              | NC-17  |
+| HAPPINESS UNITED            | G      |
+| HAROLD FRENCH               | NC-17  |
+| HARPER DYING                | G      |
+| HARRY IDAHO                 | PG-13  |
+| HATE HANDICAP               | PG     |
+| HAUNTED ANTITRUST           | NC-17  |
+| HAWK CHILL                  | PG-13  |
+| HEARTBREAKERS BRIGHT        | G      |
+| HEAVEN FREEDOM              | PG     |
+| HEAVENLY GUN                | NC-17  |
+| HEAVYWEIGHTS BEAST          | G      |
+| HEDWIG ALTER                | NC-17  |
+| HELLFIGHTERS SIERRA         | PG     |
+| HILLS NEIGHBORS             | G      |
+| HOBBIT ALIEN                | PG-13  |
+| HOCUS FRIDA                 | G      |
+| HOLES BRANNIGAN             | PG     |
+| HOLIDAY GAMES               | PG-13  |
+| HOLLOW JEOPARDY             | NC-17  |
+| HOLLYWOOD ANONYMOUS         | PG     |
+| HOMICIDE PEACH              | PG-13  |
+| HOOK CHARIOTS               | G      |
+| HOOSIERS BIRDCAGE           | G      |
+| HOPE TOOTSIE                | NC-17  |
+| HORN WORKING                | PG     |
+| HOTEL HAPPINESS             | PG-13  |
+| HOURS RAGE                  | NC-17  |
+| HUMAN GRAFFITI              | NC-17  |
+| HUNCHBACK IMPOSSIBLE        | PG-13  |
+| HUNGER ROOF                 | G      |
+| HUNTER ALTER                | PG-13  |
+| HUNTING MUSKETEERS          | NC-17  |
+| HURRICANE AFFAIR            | PG     |
+| HUSTLER PARTY               | NC-17  |
+| HYDE DOCTOR                 | G      |
+| HYSTERICAL GRAIL            | PG     |
+| IDAHO LOVE                  | PG-13  |
+| IDENTITY LOVER              | PG-13  |
+| IDOLS SNATCHERS             | NC-17  |
+| IGBY MAKER                  | NC-17  |
+| IMAGE PRINCESS              | PG-13  |
+| IMPACT ALADDIN              | PG-13  |
+| IMPOSSIBLE PREJUDICE        | NC-17  |
+| INCH JET                    | NC-17  |
+| INDEPENDENCE HOTEL          | NC-17  |
+| INDIAN LOVE                 | NC-17  |
+| INFORMER DOUBLE             | NC-17  |
+| INNOCENT USUAL              | PG-13  |
+| INSECTS STONE               | NC-17  |
+| INSIDER ARIZONA             | NC-17  |
+| INSTINCT AIRPORT            | PG     |
+| INTENTIONS EMPIRE           | PG-13  |
+| INTOLERABLE INTENTIONS      | PG-13  |
+| INTRIGUE WORST              | G      |
+| INVASION CYCLONE            | PG     |
+| IRON MOON                   | PG     |
+| ISLAND EXORCIST             | NC-17  |
+| ITALIAN AFRICAN             | G      |
+| JACKET FRISCO               | PG-13  |
+| JADE BUNCH                  | NC-17  |
+| JAPANESE RUN                | G      |
+| JASON TRAP                  | NC-17  |
+| JAWBREAKER BROOKLYN         | PG     |
+| JAWS HARRY                  | G      |
+| JEDI BENEATH                | PG     |
+| JEKYLL FROGMEN              | PG     |
+| JERICHO MULAN               | NC-17  |
+| JERK PAYCHECK               | NC-17  |
+| JERSEY SASSY                | PG     |
+| JINGLE SAGEBRUSH            | PG-13  |
+| JOON NORTHWEST              | NC-17  |
+| JUGGLER HARDLY              | PG-13  |
+| JUMANJI BLADE               | G      |
+| JUMPING WRATH               | NC-17  |
+| JUNGLE CLOSER               | NC-17  |
+| KARATE MOON                 | PG-13  |
+| KENTUCKIAN GIANT            | PG     |
+| KICK SAVANNAH               | PG-13  |
+| KILL BROTHERHOOD            | G      |
+| KING EVOLUTION              | NC-17  |
+| KISS GLORY                  | PG-13  |
+| KNOCK WARLOCK               | PG-13  |
+| KWAI HOMEWARD               | PG-13  |
+| LABYRINTH LEAGUE            | PG-13  |
+| LADY STAGE                  | PG     |
+| LADYBUGS ARMAGEDDON         | NC-17  |
+| LAMBS CINCINATTI            | PG-13  |
+| LANGUAGE COWBOY             | NC-17  |
+| LAWLESS VISION              | G      |
+| LAWRENCE LOVE               | NC-17  |
+| LEAGUE HELLFIGHTERS         | PG-13  |
+| LEATHERNECKS DWARFS         | PG-13  |
+| LEBOWSKI SOLDIERS           | PG-13  |
+| LEGALLY SECRETARY           | PG     |
+| LEGEND JEDI                 | PG     |
+| LESSON CLEOPATRA            | NC-17  |
+| LIAISONS SWEET              | PG     |
+| LIBERTY MAGNIFICENT         | G      |
+| LICENSE WEEKEND             | NC-17  |
+| LIES TREATMENT              | NC-17  |
+| LIFE TWISTED                | NC-17  |
+| LION UNCUT                  | PG     |
+| LOLA AGENT                  | PG     |
+| LOLITA WORLD                | NC-17  |
+| LONELY ELEPHANT             | G      |
+| LORD ARIZONA                | PG-13  |
+| LOSER HUSTLER               | PG     |
+| LOST BIRD                   | PG-13  |
+| LOUISIANA HARRY             | PG-13  |
+| LOVELY JINGLE               | PG     |
+| LOVER TRUMAN                | G      |
+| LOVERBOY ATTACKS            | PG-13  |
+| LUCK OPUS                   | NC-17  |
+| LUCKY FLYING                | PG-13  |
+| LUKE MUMMY                  | NC-17  |
+| LUST LOCK                   | G      |
+| MADNESS ATTACKS             | PG-13  |
+| MADRE GABLES                | PG-13  |
+| MAGIC MALLRATS              | PG     |
+| MAGNOLIA FORRESTER          | PG-13  |
+| MAGUIRE APACHE              | NC-17  |
+| MAIDEN HOME                 | PG     |
+| MAJESTIC FLOATS             | PG     |
+| MAKER GABLES                | PG-13  |
+| MALKOVICH PET               | G      |
+| MALLRATS UNITED             | PG     |
+| MALTESE HOPE                | PG-13  |
+| MANCHURIAN CURTAIN          | PG     |
+| MANNEQUIN WORST             | PG-13  |
+| MARRIED GO                  | G      |
+| MARS ROMAN                  | NC-17  |
+| MASK PEACH                  | NC-17  |
+| MASKED BUBBLE               | PG-13  |
+| MASSAGE IMAGE               | PG     |
+| MATRIX SNOWMAN              | PG-13  |
+| MEET CHOCOLATE              | G      |
+| MEMENTO ZOOLANDER           | NC-17  |
+| MENAGERIE RUSHMORE          | G      |
+| MERMAID INSECTS             | NC-17  |
+| METAL ARMAGEDDON            | PG-13  |
+| METROPOLIS COMA             | PG-13  |
+| MICROCOSMOS PARADISE        | PG-13  |
+| MIDNIGHT WESTWARD           | G      |
+| MIDSUMMER GROUNDHOG         | G      |
+| MIGHTY LUCK                 | PG     |
+| MILE MULAN                  | PG     |
+| MILLION ACE                 | PG-13  |
+| MINDS TRUMAN                | PG-13  |
+| MINE TITANS                 | PG-13  |
+| MINORITY KISS               | G      |
+| MIRACLE VIRTUAL             | PG-13  |
+| MISSION ZOOLANDER           | PG-13  |
+| MIXED DOORS                 | PG-13  |
+| MOB DUFFEL                  | G      |
+| MOCKINGBIRD HOLLYWOOD       | PG     |
+| MOD SECRETARY               | NC-17  |
+| MODEL FISH                  | NC-17  |
+| MODERN DORADO               | PG     |
+| MONEY HAROLD                | PG     |
+| MONSOON CAUSE               | PG     |
+| MONSTER SPARTACUS           | PG     |
+| MONTEREY LABYRINTH          | G      |
+| MONTEZUMA COMMAND           | NC-17  |
+| MOON BUNCH                  | PG     |
+| MOONSHINE CABIN             | PG-13  |
+| MOONWALKER FOOL             | G      |
+| MOSQUITO ARMAGEDDON         | G      |
+| MOTIONS DETAILS             | PG     |
+| MOULIN WAKE                 | PG-13  |
+| MOURNING PURPLE             | PG     |
+| MOVIE SHAKESPEARE           | PG     |
+| MULAN MOON                  | G      |
+| MULHOLLAND BEAST            | PG     |
+| MUMMY CREATURES             | NC-17  |
+| MUPPET MILE                 | PG     |
+| MURDER ANTITRUST            | PG     |
+| MUSCLE BRIGHT               | G      |
+| MUSKETEERS WAIT             | PG     |
+| MUSSOLINI SPOILERS          | G      |
+| MYSTIC TRUMAN               | NC-17  |
+| NAME DETECTIVE              | PG-13  |
+| NASH CHOCOLAT               | PG-13  |
+| NATIONAL STORY              | NC-17  |
+| NATURAL STOCK               | PG-13  |
+| NECKLACE OUTBREAK           | PG     |
+| NEMO CAMPUS                 | NC-17  |
+| NETWORK PEAK                | PG-13  |
+| NEWSIES STORY               | G      |
+| NEWTON LABYRINTH            | PG     |
+| NIGHTMARE CHILL             | PG     |
+| NONE SPIKING                | NC-17  |
+| NOON PAPI                   | G      |
+| NORTH TEQUILA               | NC-17  |
+| NORTHWEST POLISH            | PG     |
+| NOTORIOUS REUNION           | NC-17  |
+| NOTTING SPEAKEASY           | PG-13  |
+| NOVOCAINE FLIGHT            | G      |
+| NUTS TIES                   | NC-17  |
+| OCTOBER SUBMARINE           | PG-13  |
+| ODDS BOOGIE                 | NC-17  |
+| OKLAHOMA JUMANJI            | PG     |
+| OLEANDER CLUE               | PG     |
+| OPEN AFRICAN                | PG     |
+| OPERATION OPERATION         | G      |
+| OPPOSITE NECKLACE           | PG     |
+| ORANGE GRAPES               | PG-13  |
+| ORDER BETRAYED              | PG-13  |
+| OSCAR GOLD                  | PG     |
+| OTHERS SOUP                 | PG     |
+| OUTBREAK DIVINE             | NC-17  |
+| OUTFIELD MASSACRE           | NC-17  |
+| OUTLAW HANKY                | PG-13  |
+| PACIFIC AMISTAD             | G      |
+| PACKER MADIGAN              | PG-13  |
+| PANIC CLUB                  | G      |
+| PANKY SUBMARINE             | G      |
+| PANTHER REDS                | NC-17  |
+| PAPI NECKLACE               | PG     |
+| PARADISE SABRINA            | PG-13  |
+| PARIS WEEKEND               | PG-13  |
+| PARK CITIZEN                | PG-13  |
+| PARTY KNOCK                 | PG     |
+| PAST SUICIDES               | PG-13  |
+| PATHS CONTROL               | PG     |
+| PATIENT SISTER              | NC-17  |
+| PATRIOT ROMAN               | PG     |
+| PATTON INTERVIEW            | PG     |
+| PAYCHECK WAIT               | PG-13  |
+| PEACH INNOCENT              | PG-13  |
+| PEAK FOREVER                | PG     |
+| PEARL DESTINY               | NC-17  |
+| PELICAN COMFORTS            | PG     |
+| PERDITION FARGO             | NC-17  |
+| PERFECT GROOVE              | PG-13  |
+| PERSONAL LADYBUGS           | PG-13  |
+| PET HAUNTING                | PG     |
+| PHANTOM GLORY               | NC-17  |
+| PHILADELPHIA WIFE           | PG-13  |
+| PIANIST OUTFIELD            | NC-17  |
+| PICKUP DRIVING              | G      |
+| PILOT HOOSIERS              | PG     |
+| PINOCCHIO SIMON             | PG     |
+| PIRATES ROXANNE             | PG     |
+| PITTSBURGH HUNCHBACK        | PG-13  |
+| PITY BOUND                  | NC-17  |
+| PIZZA JUMANJI               | NC-17  |
+| PLATOON INSTINCT            | PG-13  |
+| POCUS PULP                  | NC-17  |
+| POLISH BROOKLYN             | PG     |
+| POLLOCK DELIVERANCE         | PG     |
+| POND SEATTLE                | PG-13  |
+| POSEIDON FOREVER            | PG-13  |
+| POTLUCK MIXED               | G      |
+| POTTER CONNECTICUT          | PG     |
+| PREJUDICE OLEANDER          | PG-13  |
+| PRESIDENT BANG              | PG     |
+| PRIDE ALAMO                 | NC-17  |
+| PRIMARY GLASS               | G      |
+| PRINCESS GIANT              | NC-17  |
+| PRIVATE DROP                | PG     |
+| PSYCHO SHRUNK               | PG-13  |
+| PULP BEVERLY                | G      |
+| PUNK DIVORCE                | PG     |
+| PURE RUNNER                 | NC-17  |
+| QUEEN LUKE                  | PG     |
+| RACER EGG                   | NC-17  |
+| RAIDERS ANTITRUST           | PG-13  |
+| RAINBOW SHOCK               | PG     |
+| RANDOM GO                   | NC-17  |
+| RANGE MOONWALKER            | PG     |
+| REAP UNFAITHFUL             | PG-13  |
+| REAR TRADING                | NC-17  |
+| REBEL AIRPORT               | G      |
+| RECORDS ZORRO               | PG     |
+| REDEMPTION COMFORTS         | NC-17  |
+| REDS POCUS                  | PG-13  |
+| REEF SALUTE                 | NC-17  |
+| REIGN GENTLEMEN             | PG-13  |
+| RESERVOIR ADAPTATION        | PG-13  |
+| RESURRECTION SILVERADO      | PG     |
+| RIDER CADDYSHACK            | PG     |
+| RIDGEMONT SUBMARINE         | PG-13  |
+| RIGHT CRANES                | PG-13  |
+| RINGS HEARTBREAKERS         | G      |
+| RIVER OUTLAW                | PG-13  |
+| ROBBERS JOON                | PG-13  |
+| ROCK INSTINCT               | G      |
+| ROCKETEER MOTHER            | PG-13  |
+| ROCKY WAR                   | PG-13  |
+| ROLLERCOASTER BRINGING      | PG-13  |
+| ROMAN PUNK                  | NC-17  |
+| ROOM ROMAN                  | PG     |
+| ROOTS REMEMBER              | PG-13  |
+| ROSES TREASURE              | PG-13  |
+| ROUGE SQUAD                 | NC-17  |
+| RUGRATS SHAKESPEARE         | PG-13  |
+| RUNAWAY TENENBAUMS          | NC-17  |
+| RUNNER MADIGAN              | NC-17  |
+| RUSH GOODFELLAS             | PG     |
+| RUSHMORE MERMAID            | PG-13  |
+| SABRINA MIDNIGHT            | PG     |
+| SADDLE ANTITRUST            | PG-13  |
+| SAGEBRUSH CLUELESS          | G      |
+| SAINTS BRIDE                | G      |
+| SAMURAI LION                | G      |
+| SANTA PARIS                 | PG     |
+| SASSY PACKER                | G      |
+| SATISFACTION CONFIDENTIAL   | G      |
+| SATURDAY LAMBS              | G      |
+| SAVANNAH TOWN               | PG-13  |
+| SCALAWAG DUCK               | NC-17  |
+| SCARFACE BANG               | PG-13  |
+| SCHOOL JACKET               | PG-13  |
+| SCISSORHANDS SLUMS          | G      |
+| SCORPION APOLLO             | NC-17  |
+| SEA VIRGIN                  | PG     |
+| SEABISCUIT PUNK             | NC-17  |
+| SEARCHERS WAIT              | NC-17  |
+| SEATTLE EXPECATIONS         | PG-13  |
+| SECRET GROUNDHOG            | PG     |
+| SECRETARY ROUGE             | PG     |
+| SECRETS PARADISE            | G      |
+| SENSIBILITY REAR            | PG     |
+| SHAKESPEARE SADDLE          | PG-13  |
+| SHANE DARKNESS              | PG     |
+| SHANGHAI TYCOON             | PG     |
+| SHAWSHANK BUBBLE            | PG     |
+| SHINING ROSES               | G      |
+| SHOCK CABIN                 | PG-13  |
+| SHOOTIST SUPERFLY           | PG-13  |
+| SHOW LORD                   | PG-13  |
+| SHREK LICENSE               | PG-13  |
+| SIDE ARK                    | G      |
+| SIERRA DIVIDE               | NC-17  |
+| SILVERADO GOLDFINGER        | PG     |
+| SIMON NORTH                 | NC-17  |
+| SINNERS ATLANTIS            | PG-13  |
+| SISTER FREDDY               | PG-13  |
+| SKY MIRACLE                 | PG     |
+| SLEEPING SUSPECTS           | PG-13  |
+| SLEEPLESS MONSOON           | G      |
+| SLEEPY JAPANESE             | PG     |
+| SLEUTH ORIENT               | NC-17  |
+| SLIPPER FIDELITY            | PG-13  |
+| SLUMS DUCK                  | PG     |
+| SMILE EARRING               | G      |
+| SMOKING BARBARELLA          | PG-13  |
+| SNATCH SLIPPER              | PG     |
+| SNATCHERS MONTEZUMA         | PG-13  |
+| SNOWMAN ROLLERCOASTER       | G      |
+| SOMETHING DUCK              | NC-17  |
+| SONG HEDWIG                 | PG-13  |
+| SONS INTERVIEW              | NC-17  |
+| SORORITY QUEEN              | NC-17  |
+| SPARTACUS CHEAPER           | NC-17  |
+| SPEAKEASY DATE              | PG-13  |
+| SPEED SUIT                  | PG-13  |
+| SPICE SORORITY              | NC-17  |
+| SPIKING ELEMENT             | G      |
+| SPINAL ROCKY                | PG-13  |
+| SPIRITED CASUALTIES         | PG-13  |
+| SPLASH GUMP                 | PG     |
+| SPOILERS HELLFIGHTERS       | G      |
+| SPY MILE                    | PG-13  |
+| SQUAD FISH                  | PG     |
+| STAGE WORLD                 | PG     |
+| STALLION SUNDANCE           | PG-13  |
+| STAR OPERATION              | PG     |
+| STATE WASTELAND             | NC-17  |
+| STEEL SANTA                 | NC-17  |
+| STEERS ARMAGEDDON           | PG     |
+| STEPMOM DREAM               | NC-17  |
+| STING PERSONAL              | NC-17  |
+| STOCK GLASS                 | PG     |
+| STONE FIRE                  | G      |
+| STORM HAPPINESS             | NC-17  |
+| STRANGELOVE DESIRE          | NC-17  |
+| STRANGER STRANGERS          | G      |
+| STREAK RIDGEMONT            | PG-13  |
+| STRICTLY SCARFACE           | PG-13  |
+| SUGAR WONKA                 | PG     |
+| SUICIDES SILENCE            | G      |
+| SUMMER SCARFACE             | G      |
+| SUNDANCE INVASION           | NC-17  |
+| SUNRISE LEAGUE              | PG-13  |
+| SUNSET RACER                | NC-17  |
+| SUPER WYOMING               | PG     |
+| SUPERFLY TRIP               | PG     |
+| SUSPECTS QUILLS             | PG     |
+| SWARM GOLD                  | PG-13  |
+| SWEDEN SHINING              | PG     |
+| SWEETHEARTS SUSPECTS        | G      |
+| TADPOLE PARK                | PG     |
+| TALENTED HOMICIDE           | PG     |
+| TARZAN VIDEOTAPE            | PG-13  |
+| TAXI KICK                   | PG-13  |
+| TEEN APOLLO                 | G      |
+| TELEGRAPH VOYAGE            | PG     |
+| TELEMARK HEARTBREAKERS      | PG-13  |
+| TEMPLE ATTRACTION           | PG     |
+| TENENBAUMS COMMAND          | PG-13  |
+| TEQUILA PAST                | PG     |
+| TEXAS WATCH                 | NC-17  |
+| THEORY MERMAID              | PG-13  |
+| THIEF PELICAN               | PG-13  |
+| THIN SAGEBRUSH              | PG-13  |
+| TIMBERLAND SKY              | G      |
+| TITANS JERK                 | PG     |
+| TOMATOES HELLFIGHTERS       | PG     |
+| TOOTSIE PILOT               | PG     |
+| TORQUE BOUND                | G      |
+| TOURIST PELICAN             | PG-13  |
+| TOWERS HURRICANE            | NC-17  |
+| TRACY CIDER                 | G      |
+| TRADING PINOCCHIO           | PG     |
+| TRAFFIC HOBBIT              | G      |
+| TRAINSPOTTING STRANGERS     | PG-13  |
+| TRAMP OTHERS                | PG     |
+| TRANSLATION SUMMER          | PG-13  |
+| TRAP GUYS                   | G      |
+| TREASURE COMMAND            | PG-13  |
+| TREATMENT JEKYLL            | PG     |
+| TRIP NEWTON                 | PG-13  |
+| TROJAN TOMORROW             | PG     |
+| TROUBLE DATE                | PG     |
+| TRUMAN CRAZY                | G      |
+| TURN STAR                   | G      |
+| TWISTED PIRATES             | PG     |
+| TYCOON GATHERING            | G      |
+| UNBREAKABLE KARATE          | G      |
+| UNCUT SUICIDES              | PG-13  |
+| UNDEFEATED DALMATIONS       | PG-13  |
+| UNFORGIVEN ZOOLANDER        | PG     |
+| UNTOUCHABLES SUNRISE        | NC-17  |
+| UPRISING UPTOWN             | NC-17  |
+| UPTOWN YOUNG                | PG     |
+| USUAL UNTOUCHABLES          | PG-13  |
+| VALENTINE VANISHING         | PG-13  |
+| VALLEY PACKER               | G      |
+| VAMPIRE WHALE               | NC-17  |
+| VANILLA DAY                 | NC-17  |
+| VANISHING ROCKY             | NC-17  |
+| VARSITY TRIP                | NC-17  |
+| VICTORY ACADEMY             | PG-13  |
+| VIDEOTAPE ARSENIC           | NC-17  |
+| VIETNAM SMOOCHY             | PG-13  |
+| VILLAIN DESPERATE           | PG-13  |
+| VIRGIN DAISY                | PG-13  |
+| VIRTUAL SPOILERS            | NC-17  |
+| VISION TORQUE               | PG-13  |
+| VOICE PEACH                 | PG-13  |
+| VOLCANO TEXAS               | NC-17  |
+| VOLUME HOUSE                | PG     |
+| VOYAGE LEGALLY              | PG-13  |
+| WAGON JAWS                  | PG     |
+| WAIT CIDER                  | PG-13  |
+| WAKE JAWS                   | G      |
+| WALLS ARTIST                | PG     |
+| WANDA CHAMBER               | PG-13  |
+| WAR NOTTING                 | G      |
+| WARDROBE PHANTOM            | G      |
+| WARLOCK WEREWOLF            | G      |
+| WARS PLUTO                  | G      |
+| WASTELAND DIVINE            | PG     |
+| WATCH TRACY                 | PG     |
+| WATERFRONT DELIVERANCE      | G      |
+| WATERSHIP FRONTIER          | G      |
+| WEDDING APOLLO              | PG     |
+| WEREWOLF LOLA               | G      |
+| WEST LION                   | G      |
+| WESTWARD SEABISCUIT         | NC-17  |
+| WHALE BIKINI                | PG-13  |
+| WHISPERER GIANT             | PG-13  |
+| WIFE TURN                   | NC-17  |
+| WITCHES PANIC               | NC-17  |
+| WIZARD COLDBLOODED          | PG     |
+| WOLVES DESIRE               | NC-17  |
+| WON DARES                   | PG     |
+| WONDERFUL DROP              | NC-17  |
+| WONDERLAND CHRISTMAS        | PG     |
+| WONKA SEA                   | NC-17  |
+| WORDS HUNTER                | PG     |
+| WORLD LEATHERNECKS          | PG-13  |
+| WORST BANGER                | PG     |
+| WRATH MILE                  | NC-17  |
+| WRONG BEHAVIOR              | PG-13  |
+| WYOMING STORM               | PG-13  |
+| YOUNG LANGUAGE              | G      |
+| YOUTH KICK                  | NC-17  |
+| ZHIVAGO CORE                | NC-17  |
+| ZORRO ARK                   | NC-17  |
++-----------------------------+--------+
+805 rows in set (0.00 sec)
+
+
+
+8. 
+
+
+SELECT title, length FROM film ORDER BY length ASC LIMIT 10;
++---------------------+--------+
+| title               | length |
++---------------------+--------+
+| RIDGEMONT SUBMARINE |     46 |
+| IRON MOON           |     46 |
+| ALIEN CENTER        |     46 |
+| LABYRINTH LEAGUE    |     46 |
+| KWAI HOMEWARD       |     46 |
+| DOWNHILL ENOUGH     |     47 |
+| HALLOWEEN NUTS      |     47 |
+| HANOVER GALAXY      |     47 |
+| DIVORCE SHINING     |     47 |
+| HAWK CHILL          |     47 |
++---------------------+--------+
+10 rows in set (0.00 sec)
+
+
+9. 
+
+SELECT title, length FROM film ORDER BY length DESC;
++-----------------------------+--------+
+| title                       | length |
++-----------------------------+--------+
+| CHICAGO NORTH               |    185 |
+| CONTROL ANTHEM              |    185 |
+| DARN FORRESTER              |    185 |
+| GANGS PRIDE                 |    185 |
+| HOME PITY                   |    185 |
+| MUSCLE BRIGHT               |    185 |
+| POND SEATTLE                |    185 |
+| SOLDIERS EVOLUTION          |    185 |
+| SWEET BROTHERHOOD           |    185 |
+| WORST BANGER                |    185 |
+| CONSPIRACY SPIRIT           |    184 |
+| CRYSTAL BREAKING            |    184 |
+| KING EVOLUTION              |    184 |
+| MOONWALKER FOOL             |    184 |
+| SMOOCHY CONTROL             |    184 |
+| SONS INTERVIEW              |    184 |
+| SORORITY QUEEN              |    184 |
+| THEORY MERMAID              |    184 |
+| CATCH AMISTAD               |    183 |
+| FRONTIER CABIN              |    183 |
+| SCALAWAG DUCK               |    183 |
+| WIFE TURN                   |    183 |
+| YOUNG LANGUAGE              |    183 |
+| BAKED CLEOPATRA             |    182 |
+| MONSOON CAUSE               |    182 |
+| RECORDS ZORRO               |    182 |
+| REDS POCUS                  |    182 |
+| SATURN NAME                 |    182 |
+| SEARCHERS WAIT              |    182 |
+| ANALYZE HOOSIERS            |    181 |
+| HAUNTING PIANIST            |    181 |
+| HOTEL HAPPINESS             |    181 |
+| INTRIGUE WORST              |    181 |
+| JACKET FRISCO               |    181 |
+| LAWLESS VISION              |    181 |
+| LOVE SUICIDES               |    181 |
+| RUNAWAY TENENBAUMS          |    181 |
+| STAR OPERATION              |    181 |
+| WILD APOLLO                 |    181 |
+| ALLEY EVOLUTION             |    180 |
+| CONFIDENTIAL INTERVIEW      |    180 |
+| IMPACT ALADDIN              |    180 |
+| MIXED DOORS                 |    180 |
+| MUSSOLINI SPOILERS          |    180 |
+| NASH CHOCOLAT               |    180 |
+| SOMETHING DUCK              |    180 |
+| ANONYMOUS HUMAN             |    179 |
+| BORN SPINAL                 |    179 |
+| CASUALTIES ENCINO           |    179 |
+| CAUSE DATE                  |    179 |
+| FLIGHT LIES                 |    179 |
+| KICK SAVANNAH               |    179 |
+| POTLUCK MIXED               |    179 |
+| REDEMPTION COMFORTS         |    179 |
+| SLACKER LIAISONS            |    179 |
+| TEXAS WATCH                 |    179 |
+| TORQUE BOUND                |    179 |
+| VIRGIN DAISY                |    179 |
+| YOUTH KICK                  |    179 |
+| DROP WATERFRONT             |    178 |
+| EXPRESS LONELY              |    178 |
+| FURY MURDER                 |    178 |
+| IMAGE PRINCESS              |    178 |
+| INNOCENT USUAL              |    178 |
+| MADNESS ATTACKS             |    178 |
+| NAME DETECTIVE              |    178 |
+| ROCKETEER MOTHER            |    178 |
+| WARDROBE PHANTOM            |    178 |
+| WRONG BEHAVIOR              |    178 |
+| DOUBLE WRATH                |    177 |
+| DOZEN LION                  |    177 |
+| EMPIRE MALKOVICH            |    177 |
+| MANCHURIAN CURTAIN          |    177 |
+| QUEST MUSSOLINI             |    177 |
+| RIDER CADDYSHACK            |    177 |
+| BRAVEHEART HUMAN            |    176 |
+| CAPER MOTIONS               |    176 |
+| CYCLONE FAMILY              |    176 |
+| DRACULA CRYSTAL             |    176 |
+| ENTRAPMENT SATISFACTION     |    176 |
+| GATHERING CALENDAR          |    176 |
+| GREEK EVERYONE              |    176 |
+| HOOSIERS BIRDCAGE           |    176 |
+| SWEDEN SHINING              |    176 |
+| WRATH MILE                  |    176 |
+| BEAUTY GREASE               |    175 |
+| DRIVING POLISH              |    175 |
+| LAWRENCE LOVE               |    175 |
+| MODEL FISH                  |    175 |
+| PATTON INTERVIEW            |    175 |
+| SPLASH GUMP                 |    175 |
+| EVOLUTION ALTER             |    174 |
+| ITALIAN AFRICAN             |    174 |
+| JADE BUNCH                  |    174 |
+| LIGHTS DEER                 |    174 |
+| UPRISING UPTOWN             |    174 |
+| VIETNAM SMOOCHY             |    174 |
+| BALLROOM MOCKINGBIRD        |    173 |
+| CONQUERER NUTS              |    173 |
+| FIRE WOLVES                 |    173 |
+| GLADIATOR WESTWARD          |    173 |
+| PIZZA JUMANJI               |    173 |
+| TALENTED HOMICIDE           |    173 |
+| VELVET TERMINATOR           |    173 |
+| CONNECTICUT TRAMP           |    172 |
+| CREEPERS KANE               |    172 |
+| EYES DRIVING                |    172 |
+| IDAHO LOVE                  |    172 |
+| JERK PAYCHECK               |    172 |
+| NORTHWEST POLISH            |    172 |
+| TIGHTS DAWN                 |    172 |
+| UNCUT SUICIDES              |    172 |
+| DUFFEL APOCALYPSE           |    171 |
+| JERICHO MULAN               |    171 |
+| KRAMER CHOCOLATE            |    171 |
+| MAGNOLIA FORRESTER          |    171 |
+| MOONSHINE CABIN             |    171 |
+| ROXANNE REBEL               |    171 |
+| TRAMP OTHERS                |    171 |
+| WORLD LEATHERNECKS          |    171 |
+| ARTIST COLDBLOODED          |    170 |
+| ATLANTIS CAUSE              |    170 |
+| DRAGON SQUAD                |    170 |
+| TRADING PINOCCHIO           |    170 |
+| AGENT TRUMAN                |    169 |
+| BREAKING HOME               |    169 |
+| HEDWIG ALTER                |    169 |
+| KENTUCKIAN GIANT            |    169 |
+| OUTBREAK DIVINE             |    169 |
+| SOUP WISDOM                 |    169 |
+| ANTITRUST TOMATOES          |    168 |
+| DYING MAKER                 |    168 |
+| HAROLD FRENCH               |    168 |
+| TRANSLATION SUMMER          |    168 |
+| CAMPUS REMEMBER             |    167 |
+| ESCAPE METROPOLIS           |    167 |
+| EXORCIST STING              |    167 |
+| INCH JET                    |    167 |
+| LESSON CLEOPATRA            |    167 |
+| REQUIEM TYCOON              |    167 |
+| SHOW LORD                   |    167 |
+| CONTACT ANONYMOUS           |    166 |
+| GREEDY ROOTS                |    166 |
+| MINE TITANS                 |    166 |
+| MOTIONS DETAILS             |    166 |
+| MURDER ANTITRUST            |    166 |
+| CITIZEN SHREK               |    165 |
+| DARLING BREAKING            |    165 |
+| MASSACRE USUAL              |    165 |
+| SONG HEDWIG                 |    165 |
+| SPEAKEASY DATE              |    165 |
+| CLERKS ANGELS               |    164 |
+| MISSION ZOOLANDER           |    164 |
+| UNITED PILOT                |    164 |
+| VIRGINIAN PLUTO             |    164 |
+| BIRD INDEPENDENCE           |    163 |
+| CASPER DRAGONFLY            |    163 |
+| EVERYONE CRAFT              |    163 |
+| GILMORE BOILED              |    163 |
+| KISS GLORY                  |    163 |
+| QUEEN LUKE                  |    163 |
+| STORY SIDE                  |    163 |
+| BADMAN DAWN                 |    162 |
+| BIRCH ANTITRUST             |    162 |
+| LOVERBOY ATTACKS            |    162 |
+| MIRACLE VIRTUAL             |    162 |
+| ROSES TREASURE              |    162 |
+| BROOKLYN DESERT             |    161 |
+| DADDY PITTSBURGH            |    161 |
+| GABLES METROPOLIS           |    161 |
+| KILLER INNOCENT             |    161 |
+| MASSAGE IMAGE               |    161 |
+| METAL ARMAGEDDON            |    161 |
+| NEIGHBORS CHARADE           |    161 |
+| OLEANDER CLUE               |    161 |
+| WASH HEAVENLY               |    161 |
+| BEAR GRACELAND              |    160 |
+| IGBY MAKER                  |    160 |
+| MULAN MOON                  |    160 |
+| MUMMY CREATURES             |    160 |
+| PEACH INNOCENT              |    160 |
+| STOCK GLASS                 |    160 |
+| DRIVER ANNIE                |    159 |
+| FRANKENSTEIN STRANGER       |    159 |
+| MALKOVICH PET               |    159 |
+| NEWSIES STORY               |    159 |
+| POSEIDON FOREVER            |    159 |
+| WEST LION                   |    159 |
+| ENOUGH RAGING               |    158 |
+| FEVER EMPIRE                |    158 |
+| FOOL MOCKINGBIRD            |    158 |
+| MONTEREY LABYRINTH          |    158 |
+| ROAD ROXANNE                |    158 |
+| SECRETARY ROUGE             |    158 |
+| HOBBIT ALIEN                |    157 |
+| INDEPENDENCE HOTEL          |    157 |
+| MULHOLLAND BEAST            |    157 |
+| PAST SUICIDES               |    157 |
+| TOOTSIE PILOT               |    157 |
+| VOLCANO TEXAS               |    157 |
+| FINDING ANACONDA            |    156 |
+| GRADUATE LORD               |    156 |
+| OPERATION OPERATION         |    156 |
+| SLIPPER FIDELITY            |    156 |
+| ELF MURDER                  |    155 |
+| FAMILY SWEET                |    155 |
+| GRAPES FURY                 |    155 |
+| LOLITA WORLD                |    155 |
+| PSYCHO SHRUNK               |    155 |
+| TADPOLE PARK                |    155 |
+| DOUBTFIRE LABYRINTH         |    154 |
+| DURHAM PANKY                |    154 |
+| GOLD RIVER                  |    154 |
+| RAGING AIRPLANE             |    154 |
+| SANTA PARIS                 |    154 |
+| SASSY PACKER                |    154 |
+| SHREK LICENSE               |    154 |
+| APOLLO TEEN                 |    153 |
+| BABY HALL                   |    153 |
+| CROSSROADS CASUALTIES       |    153 |
+| EDGE KISSING                |    153 |
+| GOLDMINE TYCOON             |    153 |
+| LEATHERNECKS DWARFS         |    153 |
+| RIGHT CRANES                |    153 |
+| ROLLERCOASTER BRINGING      |    153 |
+| RULES HUMAN                 |    153 |
+| CENTER DINOSAUR             |    152 |
+| ELIZABETH SHANE             |    152 |
+| LUCK OPUS                   |    152 |
+| SISTER FREDDY               |    152 |
+| TELEMARK HEARTBREAKERS      |    152 |
+| TOURIST PELICAN             |    152 |
+| TUXEDO MILE                 |    152 |
+| TWISTED PIRATES             |    152 |
+| WAGON JAWS                  |    152 |
+| BEETHOVEN EXORCIST          |    151 |
+| CAROL TEXAS                 |    151 |
+| HUNCHBACK IMPOSSIBLE        |    151 |
+| MASKED BUBBLE               |    151 |
+| SCHOOL JACKET               |    151 |
+| SPOILERS HELLFIGHTERS       |    151 |
+| STRAIGHT HOURS              |    151 |
+| ALI FOREVER                 |    150 |
+| BINGO TALENTED              |    150 |
+| CHRISTMAS MOONSHINE         |    150 |
+| CLEOPATRA DEVIL             |    150 |
+| GRINCH MASSAGE              |    150 |
+| HYSTERICAL GRAIL            |    150 |
+| RUSHMORE MERMAID            |    150 |
+| SATURDAY LAMBS              |    150 |
+| COLOR PHILADELPHIA          |    149 |
+| HOLOCAUST HIGHBALL          |    149 |
+| MINDS TRUMAN                |    149 |
+| NIGHTMARE CHILL             |    149 |
+| RIVER OUTLAW                |    149 |
+| SPIRIT FLINTSTONES          |    149 |
+| ARMY FLINTSTONES            |    148 |
+| BLANKET BEVERLY             |    148 |
+| EASY GLADIATOR              |    148 |
+| FIREBALL PHILADELPHIA       |    148 |
+| FLINTSTONES HAPPINESS       |    148 |
+| OUTLAW HANKY                |    148 |
+| TELEGRAPH VOYAGE            |    148 |
+| ARACHNOPHOBIA ROLLERCOASTER |    147 |
+| DIRTY ACE                   |    147 |
+| LIES TREATMENT              |    147 |
+| MADISON TRAP                |    147 |
+| MENAGERIE RUSHMORE          |    147 |
+| RACER EGG                   |    147 |
+| RANGE MOONWALKER            |    147 |
+| SCISSORHANDS SLUMS          |    147 |
+| SLUMS DUCK                  |    147 |
+| CHAPLIN LICENSE             |    146 |
+| COWBOY DOOM                 |    146 |
+| HALF OUTFIELD               |    146 |
+| HAMLET WISDOM               |    146 |
+| MOURNING PURPLE             |    146 |
+| FLOATS GARDEN               |    145 |
+| NUTS TIES                   |    145 |
+| PAYCHECK WAIT               |    145 |
+| ROCKY WAR                   |    145 |
+| RUN PACIFIC                 |    145 |
+| VACATION BOONDOCK           |    145 |
+| VIDEOTAPE ARSENIC           |    145 |
+| DANCING FEVER               |    144 |
+| FACTORY DRAGON              |    144 |
+| LAMBS CINCINATTI            |    144 |
+| PACIFIC AMISTAD             |    144 |
+| PRESIDENT BANG              |    144 |
+| STRICTLY SCARFACE           |    144 |
+| TOWERS HURRICANE            |    144 |
+| VIRTUAL SPOILERS            |    144 |
+| CINCINATTI WHISPERER        |    143 |
+| CLOCKWORK PARADISE          |    143 |
+| CROOKED FROGMEN             |    143 |
+| DETECTIVE VISION            |    143 |
+| ENCINO ELF                  |    143 |
+| SOUTH WAIT                  |    143 |
+| STEEL SANTA                 |    143 |
+| BIKINI BORROWERS            |    142 |
+| CHILL LUCK                  |    142 |
+| FERRIS MOTHER               |    142 |
+| MILLION ACE                 |    142 |
+| TOMORROW HUSTLER            |    142 |
+| TRACY CIDER                 |    142 |
+| VANISHED GARDEN             |    142 |
+| DISCIPLE MOTHER             |    141 |
+| DYNAMITE TARZAN             |    141 |
+| HOCUS FRIDA                 |    141 |
+| HOMICIDE PEACH              |    141 |
+| KISSING DOLLS               |    141 |
+| SPICE SORORITY              |    141 |
+| SUN CONFESSIONS             |    141 |
+| EAGLES PANKY                |    140 |
+| GRACELAND DYNAMITE          |    140 |
+| LIAISONS SWEET              |    140 |
+| LOATHING LEGALLY            |    140 |
+| STEERS ARMAGEDDON           |    140 |
+| CLYDE THEORY                |    139 |
+| CREATURES SHAKESPEARE       |    139 |
+| DORADO NOTTING              |    139 |
+| GROUNDHOG UNCUT             |    139 |
+| HOPE TOOTSIE                |    139 |
+| HORROR REIGN                |    139 |
+| SHRUNK DIVINE               |    139 |
+| STRANGER STRANGERS          |    139 |
+| TRAFFIC HOBBIT              |    139 |
+| VOICE PEACH                 |    139 |
+| WORKER TARZAN               |    139 |
+| EXPECATIONS NATURAL         |    138 |
+| LIBERTY MAGNIFICENT         |    138 |
+| MAIDEN HOME                 |    138 |
+| POCUS PULP                  |    138 |
+| SPINAL ROCKY                |    138 |
+| SPIRITED CASUALTIES         |    138 |
+| ARSENIC INDEPENDENCE        |    137 |
+| GRIT CLOCKWORK              |    137 |
+| LIFE TWISTED                |    137 |
+| LOSE INCH                   |    137 |
+| PHILADELPHIA WIFE           |    137 |
+| POLLOCK DELIVERANCE         |    137 |
+| SCORPION APOLLO             |    137 |
+| SLEEPY JAPANESE             |    137 |
+| WILLOW TRACY                |    137 |
+| ALASKA PHANTOM              |    136 |
+| BRINGING HYSTERICAL         |    136 |
+| CRAZY HOME                  |    136 |
+| HOLLOW JEOPARDY             |    136 |
+| MAKER GABLES                |    136 |
+| PIANIST OUTFIELD            |    136 |
+| REAP UNFAITHFUL             |    136 |
+| SQUAD FISH                  |    136 |
+| TOWN ARK                    |    136 |
+| CANDLES GRAPES              |    135 |
+| DREAM PICKUP                |    135 |
+| GREASE YOUTH                |    135 |
+| INDIAN LOVE                 |    135 |
+| JAPANESE RUN                |    135 |
+| MONEY HAROLD                |    135 |
+| SIERRA DIVIDE               |    135 |
+| SUNRISE LEAGUE              |    135 |
+| THIEF PELICAN               |    135 |
+| WALLS ARTIST                |    135 |
+| JUNGLE CLOSER               |    134 |
+| PITTSBURGH HUNCHBACK        |    134 |
+| ROBBERY BRIGHT              |    134 |
+| SPLENDOR PATTON             |    134 |
+| WEEKEND PERSONAL            |    134 |
+| BUCKET BROTHERHOOD          |    133 |
+| CURTAIN VIDEOTAPE           |    133 |
+| DRAGONFLY STRANGERS         |    133 |
+| FREEDOM CLEOPATRA           |    133 |
+| MALLRATS UNITED             |    133 |
+| CHOCOLATE DUCK              |    132 |
+| DUDE BLINDNESS              |    132 |
+| NECKLACE OUTBREAK           |    132 |
+| PLATOON INSTINCT            |    132 |
+| SKY MIRACLE                 |    132 |
+| STREAK RIDGEMONT            |    132 |
+| TRAINSPOTTING STRANGERS     |    132 |
+| VOLUME HOUSE                |    132 |
+| FANTASIA PARK               |    131 |
+| FOREVER CANDIDATE           |    131 |
+| ICE CROSSING                |    131 |
+| NEMO CAMPUS                 |    131 |
+| OPEN AFRICAN                |    131 |
+| AFRICAN EGG                 |    130 |
+| DARKO DORADO                |    130 |
+| FARGO GANDHI                |    130 |
+| JASON TRAP                  |    130 |
+| MAJESTIC FLOATS             |    130 |
+| STALLION SUNDANCE           |    130 |
+| AMERICAN CIRCUS             |    129 |
+| BAREFOOT MANCHURIAN         |    129 |
+| GOSFORD DONNIE              |    129 |
+| MUSIC BOONDOCK              |    129 |
+| OUTFIELD MASSACRE           |    129 |
+| SLEEPING SUSPECTS           |    129 |
+| UNFORGIVEN ZOOLANDER        |    129 |
+| GALAXY SWEETHEARTS          |    128 |
+| HOLES BRANNIGAN             |    128 |
+| JEDI BENEATH                |    128 |
+| NOTORIOUS REUNION           |    128 |
+| PAPI NECKLACE               |    128 |
+| USUAL UNTOUCHABLES          |    128 |
+| WARS PLUTO                  |    128 |
+| ARGONAUTS TOWN              |    127 |
+| GUNFIGHTER MUSSOLINI        |    127 |
+| MALTESE HOPE                |    127 |
+| SEVEN SWARM                 |    127 |
+| SUBMARINE BED               |    127 |
+| ALAMO VIDEOTAPE             |    126 |
+| ELEPHANT TROJAN             |    126 |
+| FREAKY POCUS                |    126 |
+| MONTEZUMA COMMAND           |    126 |
+| PAJAMA JAWBREAKER           |    126 |
+| SINNERS ATLANTIS            |    126 |
+| VAMPIRE WHALE               |    126 |
+| WOMEN DORADO                |    126 |
+| WONDERFUL DROP              |    126 |
+| BULL SHAWSHANK              |    125 |
+| DONNIE ALLEY                |    125 |
+| FISH OPUS                   |    125 |
+| GENTLEMEN STAGE             |    125 |
+| HUNTER ALTER                |    125 |
+| SAINTS BRIDE                |    125 |
+| SHINING ROSES               |    125 |
+| CHISUM BEHAVIOR             |    124 |
+| CLONES PINOCCHIO            |    124 |
+| JINGLE SAGEBRUSH            |    124 |
+| SPEED SUIT                  |    124 |
+| BREAKFAST GOLDFINGER        |    123 |
+| FLASH WARS                  |    123 |
+| INSECTS STONE               |    123 |
+| MASK PEACH                  |    123 |
+| REEF SALUTE                 |    123 |
+| SWARM GOLD                  |    123 |
+| VANISHING ROCKY             |    123 |
+| BEACH HEARTBREAKERS         |    122 |
+| BETRAYED REAR               |    122 |
+| CHICKEN HELLFIGHTERS        |    122 |
+| CONFUSED CANDLES            |    122 |
+| DECEIVER BETRAYED           |    122 |
+| DOGMA FAMILY                |    122 |
+| EXTRAORDINARY CONQUERER     |    122 |
+| HOURS RAGE                  |    122 |
+| ILLUSION AMELIE             |    122 |
+| MIGHTY LUCK                 |    122 |
+| VANILLA DAY                 |    122 |
+| ARIZONA BANG                |    121 |
+| BOOGIE AMELIE               |    121 |
+| BRANNIGAN SUNRISE           |    121 |
+| DANGEROUS UPTOWN            |    121 |
+| HARRY IDAHO                 |    121 |
+| JUMANJI BLADE               |    121 |
+| PARIS WEEKEND               |    121 |
+| PURE RUNNER                 |    121 |
+| CALENDAR GUNFIGHT           |    120 |
+| COMMAND DARLING             |    120 |
+| DAZED PUNK                  |    120 |
+| DOLLS RAGE                  |    120 |
+| KARATE MOON                 |    120 |
+| LOCK REAR                   |    120 |
+| ORDER BETRAYED              |    120 |
+| RAGE GAMES                  |    120 |
+| UNTOUCHABLES SUNRISE        |    120 |
+| APOCALYPSE FLAMINGOS        |    119 |
+| BUGSY SONG                  |    119 |
+| DUMBO LUST                  |    119 |
+| GAMES BOWFINGER             |    119 |
+| IDENTITY LOVER              |    119 |
+| STRANGERS GRAFFITI          |    119 |
+| BACKLASH UNDEFEATED         |    118 |
+| FIDELITY DEVIL              |    118 |
+| JAWBREAKER BROOKLYN         |    118 |
+| ORIENT CLOSER               |    118 |
+| OTHERS SOUP                 |    118 |
+| PATHS CONTROL               |    118 |
+| PERSONAL LADYBUGS           |    118 |
+| ROUGE SQUAD                 |    118 |
+| AFFAIR PREJUDICE            |    117 |
+| CHAMBER ITALIAN             |    117 |
+| GRAFFITI LOVE               |    117 |
+| MAGIC MALLRATS              |    117 |
+| RESURRECTION SILVERADO      |    117 |
+| DUCK RACER                  |    116 |
+| INSTINCT AIRPORT            |    116 |
+| MADIGAN DORADO              |    116 |
+| WORDS HUNTER                |    116 |
+| CONNECTION MICROCOSMOS      |    115 |
+| ELEMENT FREDDY              |    115 |
+| GLORY TRACY                 |    115 |
+| OSCAR GOLD                  |    115 |
+| POTTER CONNECTICUT          |    115 |
+| PRIX UNDEFEATED             |    115 |
+| TROOPERS METAL              |    115 |
+| ALABAMA DEVIL               |    114 |
+| BLADE POLISH                |    114 |
+| CARRIE BUNCH                |    114 |
+| CHAINSAW UPTOWN             |    114 |
+| CHASING FIGHT               |    114 |
+| GILBERT PELICAN             |    114 |
+| MARRIED GO                  |    114 |
+| PRIDE ALAMO                 |    114 |
+| SUGAR WONKA                 |    114 |
+| SUPERFLY TRIP               |    114 |
+| AMADEUS HOLY                |    113 |
+| ATTACKS HATE                |    113 |
+| BANGER PINOCCHIO            |    113 |
+| DAY UNFAITHFUL              |    113 |
+| LADYBUGS ARMAGEDDON         |    113 |
+| LEGALLY SECRETARY           |    113 |
+| SHEPHERD MIDSUMMER          |    113 |
+| STATE WASTELAND             |    113 |
+| CAT CONEHEADS               |    112 |
+| CONEHEADS SMOOCHY           |    112 |
+| CONVERSATION DOWNHILL       |    112 |
+| CROWDS TELEMARK             |    112 |
+| CRUSADE HONEY               |    112 |
+| FORRESTER COMANCHEROS       |    112 |
+| JAWS HARRY                  |    112 |
+| QUILLS BULL                 |    112 |
+| SEABISCUIT PUNK             |    112 |
+| SPY MILE                    |    112 |
+| STAGECOACH ARMAGEDDON       |    112 |
+| WAIT CIDER                  |    112 |
+| WATERSHIP FRONTIER          |    112 |
+| FROGMEN BREAKING            |    111 |
+| GROOVE FICTION              |    111 |
+| SIEGE MADRE                 |    111 |
+| SUIT WALLS                  |    111 |
+| TIES HUNGER                 |    111 |
+| WIND PHANTOM                |    111 |
+| WONDERLAND CHRISTMAS        |    111 |
+| CELEBRITY HORN              |    110 |
+| DRUMLINE CYCLONE            |    110 |
+| HIGHBALL POTTER             |    110 |
+| LEAGUE HELLFIGHTERS         |    110 |
+| REMEMBER DIARY              |    110 |
+| SAMURAI LION                |    110 |
+| SEATTLE EXPECATIONS         |    110 |
+| SNATCH SLIPPER              |    110 |
+| TRAP GUYS                   |    110 |
+| COMA HEAD                   |    109 |
+| HOUSE DYNAMITE              |    109 |
+| PANTHER REDS                |    109 |
+| PARK CITIZEN                |    109 |
+| RUGRATS SHAKESPEARE         |    109 |
+| SECRETS PARADISE            |    109 |
+| WHALE BIKINI                |    109 |
+| AUTUMN CROW                 |    108 |
+| GORGEOUS BINGO              |    108 |
+| HANDICAP BOONDOCK           |    108 |
+| LORD ARIZONA                |    108 |
+| SWEETHEARTS SUSPECTS        |    108 |
+| CHITTY LOCK                 |    107 |
+| DIARY PANIC                 |    107 |
+| EFFECT GLADIATOR            |    107 |
+| HANKY OCTOBER               |    107 |
+| HATE HANDICAP               |    107 |
+| INTENTIONS EMPIRE           |    107 |
+| MONSTER SPARTACUS           |    107 |
+| PARTY KNOCK                 |    107 |
+| UNDEFEATED DALMATIONS       |    107 |
+| WANDA CHAMBER               |    107 |
+| BED HIGHBALL                |    106 |
+| DALMATIONS SWEDEN           |    106 |
+| DEER VIRGINIAN              |    106 |
+| GASLIGHT CRUSADE            |    106 |
+| PRIVATE DROP                |    106 |
+| SAGEBRUSH CLUELESS          |    106 |
+| HUNGER ROOF                 |    105 |
+| JOON NORTHWEST              |    105 |
+| MICROCOSMOS PARADISE        |    105 |
+| MOB DUFFEL                  |    105 |
+| WON DARES                   |    105 |
+| ZHIVAGO CORE                |    105 |
+| CROW GREASE                 |    104 |
+| DATE SPEED                  |    104 |
+| FEATHERS METAL              |    104 |
+| MERMAID INSECTS             |    104 |
+| SHIP WONDERLAND             |    104 |
+| TITANIC BOONDOCK            |    104 |
+| BIRDCAGE CASPER             |    103 |
+| BLINDNESS GUN               |    103 |
+| FIREHOUSE VIETNAM           |    103 |
+| GLASS DYING                 |    103 |
+| HOMEWARD CIDER              |    103 |
+| IMPOSSIBLE PREJUDICE        |    103 |
+| MOTHER OLEANDER             |    103 |
+| PINOCCHIO SIMON             |    103 |
+| STRANGELOVE DESIRE          |    103 |
+| BOILED DARES                |    102 |
+| FALCON VOLUME               |    102 |
+| GIANT TROOPERS              |    102 |
+| HEAVYWEIGHTS BEAST          |    102 |
+| JEOPARDY ENCINO             |    102 |
+| OPUS ICE                    |    102 |
+| PANIC CLUB                  |    102 |
+| ROBBERS JOON                |    102 |
+| ROCK INSTINCT               |    102 |
+| SCARFACE BANG               |    102 |
+| TREASURE COMMAND            |    102 |
+| CHOCOLAT HARRY              |    101 |
+| CIDER DESIRE                |    101 |
+| DWARFS ALTER                |    101 |
+| GHOSTBUSTERS ELF            |    101 |
+| ROOF CHAMPION               |    101 |
+| RUNNER MADIGAN              |    101 |
+| ZOOLANDER FICTION           |    101 |
+| BEHAVIOR RUNAWAY            |    100 |
+| BILKO ANONYMOUS             |    100 |
+| DELIVERANCE MULHOLLAND      |    100 |
+| DIVINE RESURRECTION         |    100 |
+| FLATLINERS KILLER           |    100 |
+| GUN BONNIE                  |    100 |
+| HAPPINESS UNITED            |    100 |
+| HYDE DOCTOR                 |    100 |
+| PIRATES ROXANNE             |    100 |
+| PUNK DIVORCE                |    100 |
+| WITCHES PANIC               |    100 |
+| WYOMING STORM               |    100 |
+| ARMAGEDDON LOST             |     99 |
+| DARKNESS WAR                |     99 |
+| FRENCH HOLIDAY              |     99 |
+| PATIENT SISTER              |     99 |
+| PERDITION FARGO             |     99 |
+| PET HAUNTING                |     99 |
+| SABRINA MIDNIGHT            |     99 |
+| TENENBAUMS COMMAND          |     99 |
+| BOUND CHEAPER               |     98 |
+| EARRING INSTINCT            |     98 |
+| FEUD FROGMEN                |     98 |
+| LOST BIRD                   |     98 |
+| MADRE GABLES                |     98 |
+| PREJUDICE OLEANDER          |     98 |
+| SENSIBILITY REAR            |     98 |
+| WISDOM WORKER               |     98 |
+| EXPENDABLE STALLION         |     97 |
+| INVASION CYCLONE            |     97 |
+| LUCKY FLYING                |     97 |
+| REAR TRADING                |     97 |
+| DRUMS DYNAMITE              |     96 |
+| EARLY HOME                  |     96 |
+| CLUELESS BUCKET             |     95 |
+| HORN WORKING                |     95 |
+| ALICE FANTASIA              |     94 |
+| DISTURBING SCARFACE         |     94 |
+| FULL FLATLINERS             |     94 |
+| STONE FIRE                  |     94 |
+| BILL OTHERS                 |     93 |
+| GOLDFINGER SENSIBILITY      |     93 |
+| GREATEST NORTH              |     93 |
+| HILLS NEIGHBORS             |     93 |
+| PANKY SUBMARINE             |     93 |
+| SHANE DARKNESS              |     93 |
+| STING PERSONAL              |     93 |
+| SUICIDES SILENCE            |     93 |
+| ANACONDA CONFESSIONS        |     92 |
+| APACHE DIVINE               |     92 |
+| CARIBBEAN LIBERTY           |     92 |
+| CORE SUIT                   |     92 |
+| ENCOUNTERS CURTAIN          |     92 |
+| KANE EXORCIST               |     92 |
+| MYSTIC TRUMAN               |     92 |
+| NATIONAL STORY              |     92 |
+| OPPOSITE NECKLACE           |     92 |
+| SUNDANCE INVASION           |     92 |
+| TRUMAN CRAZY                |     92 |
+| ANTHEM LUKE                 |     91 |
+| FATAL HAUNTED               |     91 |
+| FIGHT JAWBREAKER            |     91 |
+| LICENSE WEEKEND             |     91 |
+| TARZAN VIDEOTAPE            |     91 |
+| TITANS JERK                 |     91 |
+| BASIC EASY                  |     90 |
+| CIRCUS YOUTH                |     90 |
+| FORWARD TEMPLE              |     90 |
+| SECRET GROUNDHOG            |     90 |
+| VERTIGO NORTHWEST           |     90 |
+| BEAST HUNCHBACK             |     89 |
+| BUTTERFLY CHOCOLAT          |     89 |
+| DARES PLUTO                 |     89 |
+| GLEAMING JAWBREAKER         |     89 |
+| PULP BEVERLY                |     89 |
+| ROOTS REMEMBER              |     89 |
+| DETAILS PACKER              |     88 |
+| HOLY TADPOLE                |     88 |
+| PURPLE MOVIE                |     88 |
+| TERMINATOR CLUB             |     88 |
+| BANG KWAI                   |     87 |
+| CHEAPER CLYDE               |     87 |
+| CONGENIALITY QUEST          |     87 |
+| DEVIL DESIRE                |     87 |
+| SLEUTH ORIENT               |     87 |
+| TREATMENT JEKYLL            |     87 |
+| ACADEMY DINOSAUR            |     86 |
+| ANNIE IDENTITY              |     86 |
+| GANDHI KWAI                 |     86 |
+| MIDNIGHT WESTWARD           |     86 |
+| YENTL IDAHO                 |     86 |
+| AMISTAD MIDSUMMER           |     85 |
+| BEVERLY OUTLAW              |     85 |
+| BLACKOUT PRIVATE            |     85 |
+| CANYON STOCK                |     85 |
+| CASABLANCA SUPER            |     85 |
+| EARTH VISION                |     85 |
+| EGYPT TENENBAUMS            |     85 |
+| ENDING CROWDS               |     85 |
+| GHOST GROUNDHOG             |     85 |
+| GRAIL FRANKENSTEIN          |     85 |
+| LOLA AGENT                  |     85 |
+| OZ LIAISONS                 |     85 |
+| STAGE WORLD                 |     85 |
+| VARSITY TRIP                |     85 |
+| WASTELAND DIVINE            |     85 |
+| WINDOW SIDE                 |     85 |
+| WONKA SEA                   |     85 |
+| DAISY MENAGERIE             |     84 |
+| GONE TROUBLE                |     84 |
+| GUYS FALCON                 |     84 |
+| HIGH ENCINO                 |     84 |
+| HONEY TIES                  |     84 |
+| IDOLS SNATCHERS             |     84 |
+| ISLAND EXORCIST             |     84 |
+| JEEPERS WEDDING             |     84 |
+| PACKER MADIGAN              |     84 |
+| PLUTO OLEANDER              |     84 |
+| SAVANNAH TOWN               |     84 |
+| SLING LUKE                  |     84 |
+| UPTOWN YOUNG                |     84 |
+| ATTRACTION NEWTON           |     83 |
+| FUGITIVE MAGUIRE            |     83 |
+| HUSTLER PARTY               |     83 |
+| MOON BUNCH                  |     83 |
+| NONE SPIKING                |     83 |
+| WARLOCK WEREWOLF            |     83 |
+| ALONE TRIP                  |     82 |
+| ANYTHING SAVANNAH           |     82 |
+| FROST HEAD                  |     82 |
+| PERFECT GROOVE              |     82 |
+| RAIDERS ANTITRUST           |     82 |
+| REIGN GENTLEMEN             |     82 |
+| TYCOON GATHERING            |     82 |
+| CLASH FREDDY                |     81 |
+| DESPERATE TRAINSPOTTING     |     81 |
+| ROMAN PUNK                  |     81 |
+| FLAMINGOS CONNECTICUT       |     80 |
+| GARDEN ISLAND               |     80 |
+| LOSER HUSTLER               |     80 |
+| MEET CHOCOLATE              |     80 |
+| PEAK FOREVER                |     80 |
+| SADDLE ANTITRUST            |     80 |
+| SEA VIRGIN                  |     80 |
+| SHAWSHANK BUBBLE            |     80 |
+| TURN STAR                   |     80 |
+| WAR NOTTING                 |     80 |
+| AMELIE HELLFIGHTERS         |     79 |
+| ISHTAR ROCKETEER            |     79 |
+| MOULIN WAKE                 |     79 |
+| SHOCK CABIN                 |     79 |
+| SPIKING ELEMENT             |     79 |
+| WEREWOLF LOLA               |     79 |
+| HOLIDAY GAMES               |     78 |
+| INSIDER ARIZONA             |     78 |
+| LANGUAGE COWBOY             |     78 |
+| UNFAITHFUL KILL             |     78 |
+| VOYAGE LEGALLY              |     78 |
+| WATCH TRACY                 |     78 |
+| BERETS AGENT                |     77 |
+| ENEMY ODDS                  |     77 |
+| FELLOWSHIP AUTUMN           |     77 |
+| MEMENTO ZOOLANDER           |     77 |
+| MOD SECRETARY               |     77 |
+| PICKUP DRIVING              |     77 |
+| BOONDOCK BALLROOM           |     76 |
+| COMFORTS RUSH               |     76 |
+| DESIRE ALIEN                |     76 |
+| DESTINATION JERK            |     76 |
+| HAUNTED ANTITRUST           |     76 |
+| ORANGE GRAPES               |     76 |
+| VILLAIN DESPERATE           |     76 |
+| BALLOON HOMEWARD            |     75 |
+| CALIFORNIA BIRDS            |     75 |
+| FIDDLER LOST                |     75 |
+| HELLFIGHTERS SIERRA         |     75 |
+| LOVER TRUMAN                |     75 |
+| NETWORK PEAK                |     75 |
+| NEWTON LABYRINTH            |     75 |
+| SATISFACTION CONFIDENTIAL   |     75 |
+| STAMPEDE DISTURBING         |     75 |
+| WIZARD COLDBLOODED          |     75 |
+| ANGELS LIFE                 |     74 |
+| INFORMER DOUBLE             |     74 |
+| JUMPING WRATH               |     74 |
+| LUKE MUMMY                  |     74 |
+| MAGUIRE APACHE              |     74 |
+| MODERN DORADO               |     74 |
+| PEARL DESTINY               |     74 |
+| RAINBOW SHOCK               |     74 |
+| SILVERADO GOLDFINGER        |     74 |
+| SNATCHERS MONTEZUMA         |     74 |
+| TEEN APOLLO                 |     74 |
+| WORKING MICROCOSMOS         |     74 |
+| BEDAZZLED MARRIED           |     73 |
+| BRIGHT ENCOUNTERS           |     73 |
+| BROTHERHOOD BLANKET         |     73 |
+| FRIDA SLIPPER               |     73 |
+| GODFATHER DIARY             |     73 |
+| MUSKETEERS WAIT             |     73 |
+| RANDOM GO                   |     73 |
+| REBEL AIRPORT               |     73 |
+| SALUTE APOLLO               |     73 |
+| STREETCAR INTENTIONS        |     73 |
+| VALLEY PACKER               |     73 |
+| WAKE JAWS                   |     73 |
+| BOWFINGER GABLES            |     72 |
+| FICTION CHRISTMAS           |     72 |
+| HARDLY ROBBERS              |     72 |
+| MAUDE MOD                   |     72 |
+| BLOOD ARGONAUTS             |     71 |
+| CHARIOTS CONSPIRACY         |     71 |
+| KNOCK WARLOCK               |     71 |
+| MANNEQUIN WORST             |     71 |
+| PRINCESS GIANT              |     71 |
+| TEMPLE ATTRACTION           |     71 |
+| TRAIN BUNCH                 |     71 |
+| CANDIDATE PERDITION         |     70 |
+| CHANCE RESURRECTION         |     70 |
+| CLUE GRAIL                  |     70 |
+| COLDBLOODED DARLING         |     70 |
+| GUNFIGHT MOON               |     70 |
+| LOUISIANA HARRY             |     70 |
+| WEDDING APOLLO              |     70 |
+| CRUELTY UNFORGIVEN          |     69 |
+| FLYING HOOK                 |     69 |
+| HEAD STRANGER               |     69 |
+| HOLLYWOOD ANONYMOUS         |     69 |
+| LEBOWSKI SOLDIERS           |     69 |
+| TIMBERLAND SKY              |     69 |
+| ARK RIDGEMONT               |     68 |
+| DIVIDE MONSTER              |     68 |
+| DOOM DANCING                |     68 |
+| HUMAN GRAFFITI              |     68 |
+| TOMATOES HELLFIGHTERS       |     68 |
+| BUTCH PANTHER               |     67 |
+| COMANCHEROS ENEMY           |     67 |
+| EGG IGBY                    |     67 |
+| LADY STAGE                  |     67 |
+| LONELY ELEPHANT             |     67 |
+| NORTH TEQUILA               |     67 |
+| SHOOTIST SUPERFLY           |     67 |
+| SILENCE KANE                |     67 |
+| CHARADE DUFFEL              |     66 |
+| EVE RESURRECTION            |     66 |
+| BARBARELLA STREETCAR        |     65 |
+| CLUB GRAFFITI               |     65 |
+| CONFESSIONS MAGUIRE         |     65 |
+| FREDDY STORM                |     65 |
+| HUNTING MUSKETEERS          |     65 |
+| LOVELY JINGLE               |     65 |
+| PATRIOT ROMAN               |     65 |
+| CRAFT OUTFIELD              |     64 |
+| DESERT POSEIDON             |     64 |
+| METROPOLIS COMA             |     64 |
+| MILE MULAN                  |     64 |
+| NOVOCAINE FLIGHT            |     64 |
+| SLEEPLESS MONSOON           |     64 |
+| TAXI KICK                   |     64 |
+| TRIP NEWTON                 |     64 |
+| VICTORY ACADEMY             |     64 |
+| ALADDIN CALENDAR            |     63 |
+| BONNIE HOLOCAUST            |     63 |
+| BORROWERS BEDAZZLED         |     63 |
+| BOULEVARD MOB               |     63 |
+| BUNCH MINDS                 |     63 |
+| DINOSAUR SECRETARY          |     63 |
+| FORREST SONS                |     63 |
+| INTOLERABLE INTENTIONS      |     63 |
+| REUNION WITCHES             |     63 |
+| AIRPLANE SIERRA             |     62 |
+| ARABIA DOGMA                |     62 |
+| HANGING DEEP                |     62 |
+| MARS ROMAN                  |     62 |
+| SNOWMAN ROLLERCOASTER       |     62 |
+| UNBREAKABLE KARATE          |     62 |
+| BIRDS PERDITION             |     61 |
+| BULWORTH COMMANDMENTS       |     61 |
+| CAMELOT VACATION            |     61 |
+| CASSIDY WYOMING             |     61 |
+| CHINATOWN GLADIATOR         |     61 |
+| DRIFTER COMMANDMENTS        |     61 |
+| POLISH BROOKLYN             |     61 |
+| RESERVOIR ADAPTATION        |     61 |
+| TROUBLE DATE                |     61 |
+| WATERFRONT DELIVERANCE      |     61 |
+| BUBBLE GROSSE               |     60 |
+| JERSEY SASSY                |     60 |
+| MOCKINGBIRD HOLLYWOOD       |     60 |
+| PHANTOM GLORY               |     60 |
+| PITY BOUND                  |     60 |
+| ROOM ROMAN                  |     60 |
+| SHAKESPEARE SADDLE          |     60 |
+| SMILE EARRING               |     60 |
+| COMMANDMENTS EXPRESS        |     59 |
+| DAUGHTER MADIGAN            |     59 |
+| HEARTBREAKERS BRIGHT        |     59 |
+| INTERVIEW LIAISONS          |     59 |
+| JET NEIGHBORS               |     59 |
+| LEGEND JEDI                 |     59 |
+| MINORITY KISS               |     59 |
+| VISION TORQUE               |     59 |
+| WHISPERER GIANT             |     59 |
+| CLOSER BANG                 |     58 |
+| DANCES NONE                 |     58 |
+| FANTASY TROOPERS            |     58 |
+| JEKYLL FROGMEN              |     58 |
+| OKLAHOMA JUMANJI            |     58 |
+| RINGS HEARTBREAKERS         |     58 |
+| SUPER WYOMING               |     58 |
+| ALTER VICTORY               |     57 |
+| CRANES RESERVOIR            |     57 |
+| DAWN POND                   |     57 |
+| DOCTOR GRAIL                |     57 |
+| MOSQUITO ARMAGEDDON         |     57 |
+| NOON PAPI                   |     57 |
+| STORM HAPPINESS             |     57 |
+| BRIDE INTRIGUE              |     56 |
+| CUPBOARD SINNERS            |     56 |
+| DESTINY SATURDAY            |     56 |
+| GOODFELLAS SALUTE           |     56 |
+| MATRIX SNOWMAN              |     56 |
+| COAST RAINBOW               |     55 |
+| WOLVES DESIRE               |     55 |
+| AIRPORT POLLOCK             |     54 |
+| GO PURPLE                   |     54 |
+| JUGGLER HARDLY              |     54 |
+| KILL BROTHERHOOD            |     54 |
+| OCTOBER SUBMARINE           |     54 |
+| SENSE GREEK                 |     54 |
+| BENEATH RUSH                |     53 |
+| CABIN FLASH                 |     53 |
+| GUMP DATE                   |     53 |
+| MAGNIFICENT CHITTY          |     53 |
+| MOVIE SHAKESPEARE           |     53 |
+| PRIMARY GLASS               |     53 |
+| SUMMER SCARFACE             |     53 |
+| TEQUILA PAST                |     53 |
+| THIN SAGEBRUSH              |     53 |
+| CADDYSHACK JEDI             |     52 |
+| HARPER DYING                |     52 |
+| LUST LOCK                   |     52 |
+| SIDE ARK                    |     52 |
+| SPARTACUS CHEAPER           |     52 |
+| TROJAN TOMORROW             |     52 |
+| WESTWARD SEABISCUIT         |     52 |
+| CHAMPION FLATLINERS         |     51 |
+| DEEP CRUSADE                |     51 |
+| ENGLISH BULWORTH            |     51 |
+| EXCITEMENT EVE              |     51 |
+| FRISCO FORREST              |     51 |
+| HALL CASSIDY                |     51 |
+| SIMON NORTH                 |     51 |
+| ADAPTATION HOLES            |     50 |
+| BLUES INSTINCT              |     50 |
+| CROSSING DIVORCE            |     50 |
+| LION UNCUT                  |     50 |
+| MUPPET MILE                 |     50 |
+| NATURAL STOCK               |     50 |
+| PILOT HOOSIERS              |     50 |
+| SMOKING BARBARELLA          |     50 |
+| ZORRO ARK                   |     50 |
+| DOORS PRESIDENT             |     49 |
+| GROSSE WONDERFUL            |     49 |
+| HEAVENLY GUN                |     49 |
+| HOOK CHARIOTS               |     49 |
+| HURRICANE AFFAIR            |     49 |
+| ACE GOLDFINGER              |     48 |
+| HEAVEN FREEDOM              |     48 |
+| MIDSUMMER GROUNDHOG         |     48 |
+| NOTTING SPEAKEASY           |     48 |
+| ODDS BOOGIE                 |     48 |
+| PARADISE SABRINA            |     48 |
+| PELICAN COMFORTS            |     48 |
+| RUSH GOODFELLAS             |     48 |
+| STEPMOM DREAM               |     48 |
+| SUNSET RACER                |     48 |
+| VALENTINE VANISHING         |     48 |
+| DIVORCE SHINING             |     47 |
+| DOWNHILL ENOUGH             |     47 |
+| HALLOWEEN NUTS              |     47 |
+| HANOVER GALAXY              |     47 |
+| HAWK CHILL                  |     47 |
+| SHANGHAI TYCOON             |     47 |
+| SUSPECTS QUILLS             |     47 |
+| ALIEN CENTER                |     46 |
+| IRON MOON                   |     46 |
+| KWAI HOMEWARD               |     46 |
+| LABYRINTH LEAGUE            |     46 |
+| RIDGEMONT SUBMARINE         |     46 |
++-----------------------------+--------+
+1000 rows in set (0.00 sec)
+
+
+10. 
+
+
+SELECT title, special_features FROM film WHERE special_features="Deleted Scenes";
++-------------------------+------------------+
+| title                   | special_features |
++-------------------------+------------------+
+| AFRICAN EGG             | Deleted Scenes   |
+| AGENT TRUMAN            | Deleted Scenes   |
+| BALLOON HOMEWARD        | Deleted Scenes   |
+| BASIC EASY              | Deleted Scenes   |
+| BEAR GRACELAND          | Deleted Scenes   |
+| BERETS AGENT            | Deleted Scenes   |
+| BONNIE HOLOCAUST        | Deleted Scenes   |
+| BULL SHAWSHANK          | Deleted Scenes   |
+| CENTER DINOSAUR         | Deleted Scenes   |
+| CINCINATTI WHISPERER    | Deleted Scenes   |
+| CORE SUIT               | Deleted Scenes   |
+| DARN FORRESTER          | Deleted Scenes   |
+| DEER VIRGINIAN          | Deleted Scenes   |
+| DELIVERANCE MULHOLLAND  | Deleted Scenes   |
+| DESIRE ALIEN            | Deleted Scenes   |
+| DESPERATE TRAINSPOTTING | Deleted Scenes   |
+| DYNAMITE TARZAN         | Deleted Scenes   |
+| EDGE KISSING            | Deleted Scenes   |
+| EMPIRE MALKOVICH        | Deleted Scenes   |
+| ENGLISH BULWORTH        | Deleted Scenes   |
+| EXPECATIONS NATURAL     | Deleted Scenes   |
+| FARGO GANDHI            | Deleted Scenes   |
+| FURY MURDER             | Deleted Scenes   |
+| GALAXY SWEETHEARTS      | Deleted Scenes   |
+| GOODFELLAS SALUTE       | Deleted Scenes   |
+| GUMP DATE               | Deleted Scenes   |
+| HALLOWEEN NUTS          | Deleted Scenes   |
+| HAPPINESS UNITED        | Deleted Scenes   |
+| HEAVYWEIGHTS BEAST      | Deleted Scenes   |
+| HIGHBALL POTTER         | Deleted Scenes   |
+| HOLOCAUST HIGHBALL      | Deleted Scenes   |
+| ICE CROSSING            | Deleted Scenes   |
+| IDENTITY LOVER          | Deleted Scenes   |
+| IMPOSSIBLE PREJUDICE    | Deleted Scenes   |
+| INCH JET                | Deleted Scenes   |
+| INTRIGUE WORST          | Deleted Scenes   |
+| JAPANESE RUN            | Deleted Scenes   |
+| JAWS HARRY              | Deleted Scenes   |
+| LADYBUGS ARMAGEDDON     | Deleted Scenes   |
+| LOATHING LEGALLY        | Deleted Scenes   |
+| LOST BIRD               | Deleted Scenes   |
+| MILLION ACE             | Deleted Scenes   |
+| MUSCLE BRIGHT           | Deleted Scenes   |
+| OPPOSITE NECKLACE       | Deleted Scenes   |
+| OTHERS SOUP             | Deleted Scenes   |
+| PRIDE ALAMO             | Deleted Scenes   |
+| RAIDERS ANTITRUST       | Deleted Scenes   |
+| RUSH GOODFELLAS         | Deleted Scenes   |
+| SAINTS BRIDE            | Deleted Scenes   |
+| SEA VIRGIN              | Deleted Scenes   |
+| SEVEN SWARM             | Deleted Scenes   |
+| SHEPHERD MIDSUMMER      | Deleted Scenes   |
+| SHOW LORD               | Deleted Scenes   |
+| SUICIDES SILENCE        | Deleted Scenes   |
+| SWEET BROTHERHOOD       | Deleted Scenes   |
+| TIES HUNGER             | Deleted Scenes   |
+| TOURIST PELICAN         | Deleted Scenes   |
+| TRAMP OTHERS            | Deleted Scenes   |
+| VIRGINIAN PLUTO         | Deleted Scenes   |
+| WYOMING STORM           | Deleted Scenes   |
+| ZHIVAGO CORE            | Deleted Scenes   |
++-------------------------+------------------+
+61 rows in set (0.00 sec)
+
+
+11. 
+
+
+
+12.
+
+
+
+13. 
+
+
+SELECT first_name, last_name
+    -> FROM actor WHERE actor_id=(
+    -> SELECT COUNT(film_id) AS number_of_films
+    -> FROM film_actor GROUP BY actor_id ORDER BY number_of_films DESC LIMIT 1);
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| TOM        | MIRANDA   |
++------------+-----------+
+1 row in set (0.01 sec)
+
+
+14. 
+
+
+
+
+15. 
+
+
+SELECT AVG(length) from film;
++-------------+
+| AVG(length) |
++-------------+
+|    115.2720 |
++-------------+
+1 row in set (0.01 sec)
+
+
+
+
+16. 
+
+
+17.
+
+
+
+18.
+
+
+SELECT release_year, COUNT(title) FROM film GROUP BY release_year ORDER BY COUNT(release_year);
++--------------+--------------+
+| release_year | COUNT(title) |
++--------------+--------------+
+|         2006 |         1000 |
++--------------+--------------+
+1 row in set (0.01 sec)
+
+
+answer = 0 
+
+
+
+19. 
+
+
+SELECT title FROM film_list WHERE category="horror";
++-----------------------------+
+| title                       |
++-----------------------------+
+| ACE GOLDFINGER              |
+| AFFAIR PREJUDICE            |
+| AIRPORT POLLOCK             |
+| ALABAMA DEVIL               |
+| ALI FOREVER                 |
+| ANALYZE HOOSIERS            |
+| ANYTHING SAVANNAH           |
+| ARABIA DOGMA                |
+| ARACHNOPHOBIA ROLLERCOASTER |
+| BEHAVIOR RUNAWAY            |
+| BOWFINGER GABLES            |
+| CARRIE BUNCH                |
+| COMMANDMENTS EXPRESS        |
+| DESERT POSEIDON             |
+| DRUMS DYNAMITE              |
+| EGYPT TENENBAUMS            |
+| ELEPHANT TROJAN             |
+| FAMILY SWEET                |
+| FIDELITY DEVIL              |
+| FREDDY STORM                |
+| GASLIGHT CRUSADE            |
+| HIGH ENCINO                 |
+| JAPANESE RUN                |
+| KARATE MOON                 |
+| KENTUCKIAN GIANT            |
+| LADY STAGE                  |
+| LOLA AGENT                  |
+| LOVE SUICIDES               |
+| MONTEREY LABYRINTH          |
+| MOTIONS DETAILS             |
+| PANIC CLUB                  |
+| PARIS WEEKEND               |
+| PATTON INTERVIEW            |
+| PULP BEVERLY                |
+| REAP UNFAITHFUL             |
+| REEF SALUTE                 |
+| ROCK INSTINCT               |
+| ROLLERCOASTER BRINGING      |
+| RULES HUMAN                 |
+| SIMON NORTH                 |
+| SINNERS ATLANTIS            |
+| SLEEPING SUSPECTS           |
+| SPIRIT FLINTSTONES          |
+| STRANGERS GRAFFITI          |
+| STREETCAR INTENTIONS        |
+| SWARM GOLD                  |
+| TARZAN VIDEOTAPE            |
+| TEMPLE ATTRACTION           |
+| TEXAS WATCH                 |
+| TRAIN BUNCH                 |
+| TREASURE COMMAND            |
+| UNDEFEATED DALMATIONS       |
+| WATERSHIP FRONTIER          |
+| WORLD LEATHERNECKS          |
+| YENTL IDAHO                 |
+| ZHIVAGO CORE                |
++-----------------------------+
+56 rows in set, 1 warning (0.02 sec)
+
+
+20. 
+
+
+SELECT * FROM staff WHERE (staff_id)=2;
++----------+------------+-----------+------------+------------------+------------------------------+----------+--------+----------+----------+---------------------+
+| staff_id | first_name | last_name | address_id | picture          | email                        | store_id | active | username | password | last_update         |
++----------+------------+-----------+------------+------------------+------------------------------+----------+--------+----------+----------+---------------------+
+|        2 | Jon        | Stephens  |          4 | NULL             | Jon.Stephens@sakilastaff.com |        2 |      1 | Jon      | NULL     | 2006-02-15 03:57:16 |
++----------+------------+-----------+------------+------------------+------------------------------+----------+--------+----------+----------+---------------------+
+1 row in set (0.01 sec)
+
+
+
+21. 
+
+
+SELECT actor_id, first_name="Fred", last_name="Costner" from actor;
+
+SELECT film_id, title FROM film WHERE film_id IN (select film_id FROM film_actor where actor_id=16);
+
+
+
+22. 
+
+
+SELECT DISTINCT COUNT(country) AS Countries from Country;
++-----------+
+| Countries |
++-----------+
+|       109 |
++-----------+
+1 row in set (0.04 sec)
+
+
+
+23. 
+
+
+SELECT name from language ORDER BY name desc;
++----------+
+| name     |
++----------+
+| Mandarin |
+| Japanese |
+| Italian  |
+| German   |
+| French   |
+| English  |
++----------+
+6 rows in set (0.00 sec)
+
+
+24. 
+
+
+SELECT first_name, last_name FROM actor WHERE last_name LIKE '%son';
++------------+-----------+
+| first_name | last_name |
++------------+-----------+
+| BETTE      | NICHOLSON |
+| MATTHEW    | JOHANSSON |
+| CHRISTIAN  | NEESON    |
+| JAYNE      | NEESON    |
+| RAY        | JOHANSSON |
+| ANGELA     | HUDSON    |
+| ALBERT     | JOHANSSON |
+| MERYL      | GIBSON    |
+| WILL       | WILSON    |
++------------+-----------+
+9 rows in set (0.00 sec)
+
+
+
+25. 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
